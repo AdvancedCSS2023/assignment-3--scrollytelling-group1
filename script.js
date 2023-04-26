@@ -1,40 +1,45 @@
-const myDemo = (function () {
-  const init = function () {
-    createObserver();
-  };
+const faders = document.querySelectorAll(".scene-text-conteiner");
 
-  const createObserver = function () {
-    let options = {
-      root: null,
-      rootMargin: "100px",
-      threshold: 0.5
-    };
+const appearOptions = {};
 
-    let observer = new IntersectionObserver(
-      function (entries, observer) {
-          handleIntersect(entries, observer); 
-        }, 
-      options);
-    
-    let targetElements = document.querySelectorAll(".box");
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("appear");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
 
-    targetElements.forEach((targetElement) => {
-      observer.observe(targetElement);
-    });
-  };
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
+});
 
-  const handleIntersect = function (entries, observer) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.children[0].classList.add("bounce-me");
-        observer.unobserve(entry.target);
-      }
-    });
-  };
+const coral = document.querySelectorAll(".scene2-pink-coral");
 
-  return {
-    init: init
-  };
-})();
+const coralOptions = {};
 
-myDemo.init();
+const appearOnScroll = new IntersectionObserver(function (
+  entries,
+  appearOnScroll
+) {
+  entries.forEach((entry) => {
+    if (!entry.isIntersecting) {
+      return;
+    } else {
+      entry.target.classList.add("left-animation");
+      appearOnScroll.unobserve(entry.target);
+    }
+  });
+},
+appearOptions);
+
+faders.forEach((fader) => {
+  appearOnScroll.observe(fader);
+});
