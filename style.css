@@ -1,5 +1,11 @@
 body {
-  background: linear-gradient(180deg, rgba(185,239,255,1) 0%, rgba(85,141,157,1) 43%, rgba(0,0,0,1) 100%);
+  background: linear-gradient(
+    180deg,
+    rgba(185, 239, 255, 1) 0%,
+    rgba(47, 198, 241, 1) 14%,
+    rgba(25, 167, 208, 1) 14%,
+    rgba(0, 0, 0, 1) 100%
+  );
   margin: 0;
 }
 
@@ -9,7 +15,7 @@ main > div {
   border: solid red 4px;
 }
 
-.scene-text-conteiner{
+.scene-text-conteiner {
   position: absolute;
   width: 30vw;
   font-size: 1.5rem;
@@ -17,22 +23,48 @@ main > div {
   transform: translateY(500px);
 }
 
-.scene1{
-
+/* Styling scene 1 and its content*/
+.scene1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+.scene1 div {
+  max-height: 50vh;
 }
 
-.scene2{
-
+.cloud {
+  width: 50%;
 }
 
-.scene3 {
-  
+.dock {
+  width: 50vw;
 }
 
+.sun {
+  width: 50%;
+}
+
+.wave-container > img {
+  position: absolute;
+  width: 30%;
+  bottom: 0;
+  opacity: 50%;
+}
+
+.waves2 {
+  right: 30px;
+}
+
+
+/* Styling scene 4 and its content*/
 .scene4 {
   color: white;
 }
 
+
+
+/* Styling scene 5 and its content*/
 .scene5 {
   color: white;
 }
