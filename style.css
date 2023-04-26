@@ -10,17 +10,13 @@ body {
 }
 
 main > div {
-  height: 100vh;
   width: 100vw;
   border: solid red 4px;
 }
 
 .scene-text-conteiner {
-  position: absolute;
   width: 30vw;
   font-size: 1.5rem;
-  left: 40vw;
-  transform: translateY(500px);
 }
 
 /* Styling scene 1 and its content*/
@@ -55,6 +51,42 @@ main > div {
 .waves2 {
   right: 30px;
 }
+
+
+/* Styling scene 2 and its content*/
+.scene2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.scene2-purple-coral{
+  width: 50%;
+}
+
+.scene2-pink-coral{
+  width: 9vw;
+  float: right;
+}
+
+
+/* Styling scene 3 and its content */
+.scene3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.scene3-green-grass-right{
+  width: 9vw;
+  float: right;
+}
+
+.scene3-green-grass-left{
+  width: 9vw;
+}
+
+
 
 
 /* Styling scene 4 and its content*/
