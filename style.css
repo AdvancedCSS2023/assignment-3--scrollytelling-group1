@@ -10,18 +10,13 @@ body {
 }
 
 main > div {
-  height: 100vh;
   width: 100vw;
   border: solid red 4px;
 }
 
 .scene-text-conteiner {
-  position: absolute;
   width: 30vw;
   font-size: 1.5rem;
-  left: 40vw;
-  
-  opacity: 0;
 }
 
 /* Styling scene 1 and its content*/
@@ -58,6 +53,42 @@ main > div {
 }
 
 
+/* Styling scene 2 and its content*/
+.scene2{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.scene2-purple-coral{
+  width: 50%;
+}
+
+.scene2-pink-coral{
+  width: 9vw;
+  float: right;
+}
+
+
+/* Styling scene 3 and its content */
+.scene3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+}
+
+.scene3-green-grass-right{
+  width: 9vw;
+  float: right;
+}
+
+.scene3-green-grass-left{
+  width: 9vw;
+}
+
+
+
+
 /* Styling scene 4 and its content*/
 .scene4 {
   color: white;
@@ -68,41 +99,4 @@ main > div {
 /* Styling scene 5 and its content*/
 .scene5 {
   color: white;
-}
-
-
-.appear{
-  opacity: 100%;
-  -webkit-transition: opacity 550ms ease-in;
-  transition: opacity 3s ease-in;
-  animation-name: rotate;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes rotate {
-  from {
-    transform: translateX(500px)
-  }
-  to {
-    transform: translateX(0px)
-  }
-}
-
-.left-animation {
-  opacity: 100%;
-  -webkit-transition: opacity 550ms ease-in;
-  transition: opacity 3s ease-in;
-  animation-name: rotate;
-  animation-duration: 2s;
-  animation-fill-mode: forwards;
-}
-
-@keyframes rotate {
-  from {
-    transform: translateX(500px)
-  }
-  to {
-    transform: translateX(0px)
-  }
 }
