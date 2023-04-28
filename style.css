@@ -1,3 +1,4 @@
+/* Styling the body */
 body {
   background: linear-gradient(
     180deg,
@@ -7,28 +8,40 @@ body {
     rgba(0, 0, 0, 1) 100%
   );
   margin: 0;
+  font-family: sans-serif;
 }
 
+/* general style for the scenes */
 main > div {
-  width: 100vw;
-  border: solid red 4px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
 }
 
+/* changes the font color for the lower scenes */
+main > div:nth-of-type(n + 3) {
+  color: lightgrey;
+}
+
+/* styles the size of the textboxes */
 .scene-text-conteiner {
   width: 30vw;
   font-size: 1.5rem;
 }
 
-/* Styling scene 1 and its content*/
-.scene1 {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+/* general style for plant images*/
+.background-plants-right {
+  width: 9vw;
+  float: right;
 }
-.scene1 div {
-  max-height: 50vh;
+.background-plants-left {
+  width: 9vw;
 }
 
+
+
+/* SCENE 1 */
+/* Style for scene 1 and the elenent in it */
 .cloud {
   width: 50%;
 }
@@ -44,59 +57,10 @@ main > div {
 .wave-container > img {
   position: absolute;
   width: 30%;
-  bottom: 0;
+  bottom: 5vw;
   opacity: 50%;
 }
 
 .waves2 {
   right: 30px;
-}
-
-
-/* Styling scene 2 and its content*/
-.scene2{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.scene2-purple-coral{
-  width: 50%;
-}
-
-.scene2-pink-coral{
-  width: 9vw;
-  float: right;
-}
-
-
-/* Styling scene 3 and its content */
-.scene3{
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-}
-
-.scene3-green-grass-right{
-  width: 9vw;
-  float: right;
-}
-
-.scene3-green-grass-left{
-  width: 9vw;
-}
-
-
-
-
-/* Styling scene 4 and its content*/
-.scene4 {
-  color: white;
-}
-
-
-
-/* Styling scene 5 and its content*/
-.scene5 {
-  color: white;
 }
