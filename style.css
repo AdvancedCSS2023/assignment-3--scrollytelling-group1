@@ -27,6 +27,7 @@ main > div:nth-of-type(n + 3) {
 .scene-text-conteiner {
   width: 30vw;
   font-size: 1.5rem;
+  left:10px;
 }
 
 /* general style for plant images*/
