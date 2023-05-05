@@ -1,5 +1,9 @@
 /* Variables */
 /*Applying colors*/
+body {
+  background-color: black;
+}
+
 .scene1 {
   background: linear-gradient(180deg, rgb(157, 221, 247) 67%, rgb(83, 154, 184) 67%);
 }
@@ -20,6 +24,18 @@
   background: black;
 }
 
+.scene6 {
+  background: black;
+}
+
+.scene7 {
+  background-color: black;
+}
+
+.scene8 {
+  background-color: black;
+}
+
 main div:nth-of-type(n + 3) {
   color: lightgrey;
 }
@@ -28,7 +44,7 @@ body {
   margin: 0;
 }
 
-main > div {
+main > div:nth-of-type(-n+5) {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -39,20 +55,34 @@ main > div {
   width: 30vw;
   margin: 0 auto;
   opacity: 0;
+  position: sticky;
+  top: 25px;
 }
 
 /* general layout for side plant images*/
 .background-plants-right {
   width: 9vw;
   float: right;
+  opacity: 0;
+}
+
+.plantContainer {
+  overflow: hidden;
 }
 
 .background-plants-left {
   width: 9vw;
+  opacity: 0;
 }
 
-/* SCENE 1 */
 /* Style for scene 1 and the elenent in it */
+.bottle {
+  position: absolute;
+  width: 5vw;
+  left: 32vw;
+  transform: translateY(4vw);
+}
+
 .cloud {
   width: 50%;
 }
@@ -70,20 +100,140 @@ main > div {
   margin: 0 auto;
 }
 
-.floatingBottleTrash {
-  opacity: 20%;
-  width: 50vw;
+.scene6 {
+  height: 100vh;
+}
+.scene6 h3 {
+  position: sticky;
+  top: 50vh;
+  margin: 7vw 0;
+}
+
+.scene7 {
+  height: 100vh;
+  background-image: url("../images/healthy-earth.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.scene7 div {
+  height: 100vh;
+}
+
+.scene8 {
+  height: 100vh;
+  background-image: url("../images/dead-earth.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
 }
 
 body {
   font-family: sans-serif;
 }
 
-.scene-text-conteiner {
+.scene-text-conteiner, p {
   font-size: 1.5rem;
 }
 
-.show {
-  transform: translateY(-20px);
-  opacity: 1;
+h3 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+@keyframes textboxInn {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 1;
+  }
+}
+@keyframes plantLeftInn {
+  0% {
+    opacity: 1;
+    transform: rotate(13deg) translateX(-90px);
+  }
+  40% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+  60% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+}
+@keyframes plantRightInn {
+  0% {
+    opacity: 1;
+    transform: rotate(-13deg) translateX(90px);
+  }
+  40% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+  60% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+}
+@keyframes bottleThrow {
+  0% {
+    transform: translateY(4vw);
+  }
+  60% {
+    transform: translateX(20vw) translateY(-20vw) rotate(-200deg);
+  }
+  100% {
+    transform: translateX(20vw) translateY(10vw) rotate(-400deg);
+    position: fixed;
+  }
+}
+.showTextAnimation {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.showPlantLeftAnimation {
+  animation-name: plantLeftInn;
+  transition: 0.8s;
+  animation-duration: 3s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.showPlantRightAnimation {
+  animation-name: plantRightInn;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.throwBottleAnimation {
+  animation-name: bottleThrow;
+  transition: 2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }/*# sourceMappingURL=index.css.map */
