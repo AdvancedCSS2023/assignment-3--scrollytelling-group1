@@ -3,7 +3,7 @@ body{
 }
 
 main{
-    &>div{
+    &>div:nth-of-type(-n+5){
       display: grid;
       grid-template-columns: 1fr 1fr;  
       grid-template-rows: 1fr 1fr;  
@@ -15,20 +15,34 @@ main{
     width: 30vw;
     margin: 0 auto;
     opacity: 0;
+    position: sticky;
+    top: 25px;
   }
 
   /* general layout for side plant images*/
 .background-plants-right {
     width: 9vw;
     float: right;
+    opacity: 0;
+  }
+
+  .plantContainer{
+    overflow: hidden;
   }
 
   .background-plants-left {
     width: 9vw;
+    opacity: 0;
   }
 
-/* SCENE 1 */
 /* Style for scene 1 and the elenent in it */
+.bottle{
+  position: absolute;
+  width: 5vw;
+  left: 32vw;
+  transform: translateY(4vw);
+}
+
 .cloud {
     width: 50%;
   }
@@ -46,7 +60,31 @@ main{
     margin: 0 auto;
   }
 
-  .floatingBottleTrash{
-    opacity: 20%;
-    width: 50vw;
+.scene6{
+    height: 100vh;
+  h3{
+    position: sticky;
+    top: 50vh;
+    margin: 7vw 0;
+  }
+}
+
+  .scene7{
+    height: 100vh;
+    background-image: url("../images/healthy-earth.png");
+	  background-repeat: no-repeat;
+	  background-position: center;
+	  background-attachment: fixed;
+
+    div{
+      height: 100vh;
+    }
+  }
+
+  .scene8{
+    height: 100vh;
+    background-image: url("../images/dead-earth.png");
+	background-repeat: no-repeat;
+	background-position: center ;
+	background-attachment: fixed;
   }
