@@ -1,0 +1,33 @@
+/* Variables */
+$scene1Gradient : linear-gradient(180deg, rgba(157,221,247,1) 67%, rgb(83, 154, 184) 67%);
+$scene2Gradient : linear-gradient(180deg, rgba(83, 154, 184,1) 22%, rgba(63,106,124,1) 66%);
+$scene3Gradient : linear-gradient(180deg, rgba(63,106,124,1) 22%, rgba(15,48,62,1) 73%);
+$scene4Gradient : linear-gradient(180deg, rgba(15,48,62,1) 22%, rgba(0,0,0,1) 73%);
+$scene5Gradient : black;
+$darkSceneFontColor :  lightgrey;
+
+
+/*Applying colors*/
+.scene1{
+    background: $scene1Gradient;
+}
+.scene2{
+    background: $scene2Gradient;
+}
+.scene3{
+    background: $scene3Gradient;
+}
+.scene4{
+    background: $scene4Gradient;
+}
+.scene5{
+   background: $scene5Gradient;
+}
+
+main{
+    div{
+        &:nth-of-type(n + 3){
+            color: $darkSceneFontColor;
+        }
+    }
+}
