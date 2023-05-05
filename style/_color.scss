@@ -8,6 +8,9 @@ $darkSceneFontColor :  lightgrey;
 
 
 /*Applying colors*/
+body{
+    background-color: $scene5Gradient;
+}
 .scene1{
     background: $scene1Gradient;
 }
@@ -23,6 +26,17 @@ $darkSceneFontColor :  lightgrey;
 .scene5{
    background: $scene5Gradient;
 }
+.scene6{
+    background: $scene5Gradient;
+}
+.scene7{
+    background-color: $scene5Gradient;
+}
+
+.scene8{
+    background-color: $scene5Gradient;
+}
+
 
 main{
     div{
