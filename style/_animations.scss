@@ -1,4 +1,105 @@
-.show{
-    transform: translateY(-20px);
-    opacity: 1;
+
+@keyframes textboxInn{
+    0%{
+        transform: translateY(0);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(-40px);
+        opacity: 1;
+    }
 }
+
+@keyframes plantLeftInn{
+    0%{
+        opacity: 1;
+        transform: rotate(13deg) translateX(-90px);
+    }
+    40%{
+        opacity: 1;
+        transform: rotate(38deg) translateX(0px);
+    }
+    60%{
+        opacity: 1;
+        transform: rotate(38deg) translateX(0px); 
+    }
+    80%{
+        opacity: 1;
+        transform: rotate(38deg) translateX(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(38deg) translateX(0px);
+    }
+}
+
+@keyframes plantRightInn{
+    0%{
+        opacity: 1;
+        transform: rotate(-13deg) translateX(90px);
+    }
+    40%{
+        opacity: 1;
+        transform: rotate(-30deg) translateX(0px);
+    }
+    60%{
+        opacity: 1;
+        transform: rotate(-30deg) translateX(0px); 
+    }
+    80%{
+        opacity: 1;
+        transform: rotate(-30deg) translateX(0px);
+    }
+    100%{
+        opacity: 1;
+        transform: rotate(-30deg) translateX(0px);
+    }
+}
+
+@keyframes bottleThrow{
+    0%{
+        transform: translateY(4vw);
+    }
+    60%{
+        transform: translateX(20vw) translateY(-20vw) rotate(-200deg);
+    }
+    
+    100%{
+        transform: translateX(20vw) translateY(10vw) rotate(-400deg);
+        position: fixed;
+    }
+}
+
+
+.showTextAnimation{
+    animation-name: textboxInn;
+    transition: 0.8s;
+    animation-duration: 1s;
+    animation-delay: 0.7s;
+    animation-fill-mode: forwards;
+}
+
+.showPlantLeftAnimation{
+    animation-name: plantLeftInn;
+    transition: 0.8s;
+    animation-duration: 3s;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+   }
+
+.showPlantRightAnimation {
+    animation-name: plantRightInn;
+    animation-duration: 1s;
+    animation-delay: 0.9s;
+    animation-fill-mode: forwards;
+}
+
+.throwBottleAnimation{
+    animation-name: bottleThrow;
+    transition: 2s;
+    animation-duration: 3s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+
