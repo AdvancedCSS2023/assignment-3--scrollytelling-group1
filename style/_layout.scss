@@ -56,7 +56,7 @@ main{
   width: 5vw;
   left: 32vw;
   transform: translateY(4vw);
-	z-index: 1;
+  z-index: 1;
 }
 
 .cloud {
@@ -64,8 +64,9 @@ main{
   }
   
   .dock {
-	  position: relative;
-    width: 50vw;
+	position: relative;
+   	width: 50vw;
+	z-index: 2;
   }
   
   .sun {
