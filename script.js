@@ -25,11 +25,40 @@ const plantObserverLeft = new IntersectionObserver(function(entries, observer) {
   });
 });
 
+
+// Observer for .fish-blue
+const fishBlueObserverRight = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !entry.target.classList.contains('animate-fish-right')) {
+      entry.target.classList.add('animate-fish-right');
+    }
+  });
+});
+
+// Observer for .fish-black-left
+const fishBlackObserverLeft = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !entry.target.classList.contains('animate-fish-left')) {
+      entry.target.classList.add('animate-fish-left');
+    }
+  });
+});
+
+// Observer for .fish-black-right
+const fishBlackObserverRight = new IntersectionObserver(function(entries, observer) {
+  entries.forEach(entry => {
+    if (entry.isIntersecting && !entry.target.classList.contains('animate__blue-fish')) {
+      entry.target.classList.add('animate__blue-fish');
+    }
+  });
+});
+
 // Elements to observe
 const textElements = document.querySelectorAll('.scene-text-conteiner');
 const plantElementsRight = document.querySelectorAll('.background-plants-right');
 const plantElementsleft = document.querySelectorAll('.background-plants-left');
 const h3Element = document.querySelector('h3');
+const fishBlueElementright = document.querySelector('.fish-blue');
 
 // Add observers to elements
 textElements.forEach(el => textObserver.observe(el));
