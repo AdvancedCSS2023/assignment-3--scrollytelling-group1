@@ -79,10 +79,10 @@ main{
   }
 
   .waves {
-      position: absolute;
+      position: relative;
       width: 100vw;
       height: 20vh;
-      bottom: 20vh;
+      bottom: -10vh;
       overflow: hidden;
 	  z-index: 0;
     }
@@ -115,7 +115,7 @@ z-index: 1000;
     .waves-3 {
       position: absolute;
       bottom: 20vh;
-      left: 3vw;
+      left: 0vw;
       top: 0vh;
       width: 100vw;
       height: 100px;
