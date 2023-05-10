@@ -61,6 +61,7 @@ body{
 }
 
 main{
+    background-color: $scene5Gradient;
     div{
         &:nth-of-type(n + 3){
             color: $darkSceneFontColor;

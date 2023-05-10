@@ -7,6 +7,7 @@ main{
       display: grid;
       grid-template-columns: 1fr 1fr;  
       grid-template-rows: 1fr 1fr;  
+      position: relative;
     }
 }
 
@@ -76,16 +77,15 @@ main{
     position:absolute;
     margin-top: -3%;
     left: -50%;
+    z-index: 3;
   }
 
   .waves {
-      position: relative;
-      width: 100vw;
-      height: 20vh;
-      bottom: -10vh;
-	  left: -50vw;
-      overflow: hidden;
-	  z-index: 0;
+    position: absolute;
+    width: 100vw;
+    top: 58%;
+    transform: translateY(-50%);
+    z-index: 0;
     }
     
     .waves-1 {
@@ -96,7 +96,6 @@ main{
       height: 100px;
       background-repeat: repeat-x;
       background-size: 1000px 100px;
-z-index: 1000;
       opacity: 0.7;
     }
   
