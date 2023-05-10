@@ -68,6 +68,19 @@ main{
    	position: relative;
 	left: -50%;
 }
+.man__head {
+    border-radius: 50%;
+}
+.man__body {
+    height: 50px;
+}
+.man__leg {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.man__leg>* {
+    width: 10px;
+}
 .scene6{
     height: 100vh;
   h3{
