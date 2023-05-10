@@ -55,6 +55,7 @@ main{
   width: 5vw;
   left: 32vw;
   transform: translateY(4vw);
+	z-index: 1;
 }
 
 .cloud {
@@ -62,6 +63,7 @@ main{
   }
   
   .dock {
+	  position: relative;
     width: 50vw;
   }
   
@@ -103,13 +105,14 @@ z-index: 2;
       height: 20vh;
       top: 10vh;
       overflow: hidden;
+	  z-index: 0;
     }
     
     .waves-1 {
       position: absolute;
       top: 0vh;
       left: 0vw;
-      width: 200vw;
+      width: 100vw;
       height: 100px;
       background-repeat: repeat-x;
       background-size: 1000px 100px;
@@ -123,11 +126,10 @@ z-index: 1000;
       bottom: 20vh;
       left: 0vw;
       top: 0vh;
-      width: 200vw;
+      width: 100vw;
       height: 100px;
       background-repeat: repeat-x;
       background-size: 1000px 100px;
-	z-index: 999;
       opacity: 0.6;
     }
   
@@ -136,11 +138,10 @@ z-index: 1000;
       bottom: 20vh;
       left: -10vw;
       top: 0vh;
-      width: 200vw;
+      width: 100vw;
       height: 100px;
       background-repeat: repeat-x;
       background-size: 1000px 100px;
-      z-index: 999;
       opacity: 1;
     }
    
@@ -148,11 +149,10 @@ z-index: 1000;
         position: absolute;
         top: 0vh;
         left: -55vw;
-        width: 200vw;
+        width: 100vw;
         height: 100px;
         background-repeat: repeat-x;
         background-size: 1000px 100px;
-        z-index: 1000;
         opacity: 0.5;
       }
    
