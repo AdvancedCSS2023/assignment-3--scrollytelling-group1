@@ -101,6 +101,7 @@
     animation-delay: 2s;
     animation-fill-mode: forwards;
 }
+/*sun animation*/
 .sun{
             animation-name: sunMove;
             animation-duration: 2s;
@@ -115,8 +116,9 @@
     transform: scale(1.2);
   }
 }
+/*man animation*/
 .man{
-    animation: walking 0.6s infinite, move-man 2s 2 alternate;
+    animation: walking 0.6s infinite;
 }
 @keyframes walking {
     0% {
@@ -129,29 +131,7 @@
       transform: translateY(0);
     }
   }
-  @keyframes move-man {
-    0% {
-      left: -50%;
-      transform: scaleX(1);
-    }
-    25% {
-      left: 25%;
-      transform: scaleX(1);
-    }
-    50% {
-    }
-    75% {
-      left: 25%;
-      transform: scaleX(-1);
-    }
-    100% {
-      left: -50%;
-      transform: scaleX(-1);
-    }
-    100% {
-      animation-play-state: paused;
-    }
-  }
+  
 
 /*Waves animation*/
  .waves-1 {
