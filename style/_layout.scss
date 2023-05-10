@@ -86,6 +86,62 @@ z-index: 2;
     width: 10px;
 	z-index: 2;
 }
+
+  .waves {
+      position: relative;
+      width: 100vw;
+      height: 20vh;
+      top: 10vh;
+      overflow: hidden;
+    }
+    
+    .waves-1 {
+      position: absolute;
+      top: 0vh;
+      left: 0vw;
+      width: 200vw;
+      height: 100px;
+      background-repeat: repeat-x;
+      background-size: 1000px 100px;
+    }
+  
+  
+    .waves-2 {
+      position: absolute;
+      bottom: 20vh;
+      left: 0vw;
+      top: 0vh;
+      width: 200vw;
+      height: 100px;
+      background-repeat: repeat-x;
+      background-size: 1000px 100px;
+    }
+  
+    .waves-3 {
+      position: absolute;
+      bottom: 20vh;
+      left: -10vw;
+      top: 0vh;
+      width: 200vw;
+      height: 100px;
+      background-repeat: repeat-x;
+      background-size: 1000px 100px;
+      z-index: 999;
+      opacity: 1;
+    }
+   
+    .waves-4 {
+        position: absolute;
+        top: 0vh;
+        left: -55vw;
+        width: 200vw;
+        height: 100px;
+        background-repeat: repeat-x;
+        background-size: 1000px 100px;
+        z-index: 1000;
+        opacity: 0.5;
+      }
+   
 .scene6{
     height: 100vh;
   h3{
