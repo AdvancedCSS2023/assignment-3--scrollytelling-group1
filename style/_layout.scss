@@ -67,12 +67,16 @@ main{
     	width: 30px;
    	position: relative;
 	left: -50%;
+	z-index: 2;
 }
 .man__head {
     border-radius: 50%;
+z-index: 2;
+
 }
 .man__body {
     height: 50px;
+	z-index: 2;
 }
 .man__leg {
     display: grid;
@@ -80,6 +84,7 @@ main{
 }
 .man__leg>* {
     width: 10px;
+	z-index: 2;
 }
 .scene6{
     height: 100vh;
