@@ -136,6 +136,31 @@ main{
         opacity: 0.5;
       }
    
+ /*Scene 2 Fish*/
+   .fish-blue {
+    transform: scale(0.3);
+   }
+  .fish-black {
+  transform: scale(0.3);
+  
+  }
+  .fish-black-right {
+    transform: scale(0.3);
+  }
+  .fish-black-left {
+    transform: scale(0.3);
+    top: 10vw;
+  }
+
+.scene6{
+    height: 100vh;
+  h3{
+    position: sticky;
+    top: 50vh;
+    margin: 7vw 0;
+  }
+}
+
 .scene6{
     height: 100vh;
   h3{
