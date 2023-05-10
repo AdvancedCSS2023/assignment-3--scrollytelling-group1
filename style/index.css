@@ -50,6 +50,21 @@ main > div:nth-of-type(-n+5) {
   grid-template-rows: 1fr 1fr;
 }
 
+
+@media (prefers-color-scheme: dark) {
+  body {
+  background-color: black;
+  color: white;
+  }
+}
+
+@media (prefers-color-scheme: light) {
+  body {
+  background-color: white;
+  color: black;
+  }
+}
+
 /* styles the size of the textboxes */
 .scene-text-conteiner {
   width: 30vw;
