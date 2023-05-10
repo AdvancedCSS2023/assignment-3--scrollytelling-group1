@@ -59,7 +59,15 @@ main{
     width: 30%;
     margin: 0 auto;
   }
-
+.man{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+    	height: 100px;
+    	width: 30px;
+   	position: relative;
+	left: -50%;
+}
 .scene6{
     height: 100vh;
   h3{
