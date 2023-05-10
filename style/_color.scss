@@ -36,7 +36,15 @@ body{
 .scene8{
     background-color: $scene5Gradient;
 }
-
+.man__head {
+    background-color: black;
+}
+.man__body {
+    background-color: black;
+}
+.man__leg>* {
+    background-color: black;
+}
 
 main{
     div{
