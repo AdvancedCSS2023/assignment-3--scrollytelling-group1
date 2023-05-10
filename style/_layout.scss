@@ -69,10 +69,6 @@ main{
     width: 50%;
   }
   
-  .waves{
-    width: 30%;
-    margin: 0 auto;
-  }
 .man{
 	display: grid;
 	grid-template-columns: 1fr;
@@ -117,6 +113,8 @@ z-index: 2;
       height: 100px;
       background-repeat: repeat-x;
       background-size: 1000px 100px;
+z-index: 1000;
+      opacity: 0.7;
     }
   
   
@@ -129,6 +127,8 @@ z-index: 2;
       height: 100px;
       background-repeat: repeat-x;
       background-size: 1000px 100px;
+	z-index: 999;
+      opacity: 0.6;
     }
   
     .waves-3 {
