@@ -115,3 +115,40 @@
     transform: scale(1.2);
   }
 }
+.man__leg--left {
+    transform: rotate(0deg);
+    transform-origin: top right;
+    animation: left-leg 0.5s infinite alternate;
+}
+
+.man__leg--right {
+    transform: rotate(0deg);
+    transform-origin: top left;
+    animation: right-leg 0.5s infinite alternate;
+}
+
+@keyframes left-leg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(-60deg);
+    }
+}
+
+@keyframes right-leg {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(60deg);
+    }
+}
+@keyframes move-man {
+  0% {
+    left: -50%;
+  }
+  100% {
+    left: 25%;
+  }
+}
