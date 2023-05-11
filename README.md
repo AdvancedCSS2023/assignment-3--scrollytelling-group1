@@ -40,7 +40,8 @@ For assistance or inquiries regarding the project, feel free to contact the team
 
 Which technology is used
 
-To promote sustainability goal 14, the project employs a variety of technologies to create an animated and scrollable website. These technologies include advanced CSS features, CSS architecture, Sass, BEM, SVG, keyframe animations, transitions, transformations,implementation of accessibility, prefers-reduced-motion, prefers-color-scheme, orientation and Scrollytelling using Intersection Observer and Javascript. we have used the color-scheme to change the sun to moon and a background gradient from lighter to darker shades creates a distinct transition that gives off a night-time vibe. 
+To promote sustainability goal 14, the project employs a variety of technologies to create an animated and scrollable website. These technologies include advanced CSS features, CSS architecture, Sass, BEM, SVG, keyframe animations, transitions, transformations,implementation of accessibility, prefers-reduced-motion, prefers-color-scheme, orientation and Scrollytelling using Intersection Observer and Javascript. we have used the color-scheme to change the sun to moon and a background gradient from lighter to darker shades creates a distinct transition that gives off a night-time vibe.
+The sun, the bottle, and the waves are reduced motion elements that represent the need to reduce our impact on the environment. By incorporating the prefers-reduced-motion feature, the website ensures that users who prefer reduced motion can access the content without any discomfort. 
 By utilizing these technologies, the project is visually appealing, informative, and accessible to a diverse range of users. 
 
 
