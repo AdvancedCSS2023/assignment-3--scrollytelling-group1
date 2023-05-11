@@ -4,9 +4,8 @@
 
 
 What the project does 
-
-This project is an animated, scrollable website about sustainable goal 14. Conserve and sustainably use the oceans, seas and marine resources for sustainable development. 
-In the project we are using advanced CSS features, CSS architecture, Sass, BEM, SVG, keyframe animations, transitions and transformations. 
+This project is an animated, scrollable website about sustainable goal 14. UN's sustainable goal 14 is about conserving and use the oceans sustainably. Sea and marine resources are an important key element for a future within sustainable development, and should therefore be utalized. 
+In the project we are using advanced CSS features such as CSS architecture, Sass, BEM, SVG, keyframe animations, transitions and transformations. 
 
 This site features scrolling narration, implemented using Intersection Observer, and includes accessibility features such as "prefer-color-scheme" to ensure an optimal user experience.
 The primary objective of the project is to educate users about Sustainable Development Goal 14, which focuses on ocean conservation and sustainable use of marine resources. This is achieved through a combination of storytelling, animations, layout, and typography, which are designed to engage and inform users about the importance of protecting our oceans.
@@ -44,6 +43,6 @@ To promote sustainability goal 14, the project employs a variety of technologies
 
 
 Who maintains and contributes to the project
-
+Since this project is a work on github, anyone who's a member of the community are allowed and able to contribute if they want to.
 The project is maintained and contributed by the team members which is listed in the github repository, 
 Elina, Johan, Jørgen and Solveig. 
