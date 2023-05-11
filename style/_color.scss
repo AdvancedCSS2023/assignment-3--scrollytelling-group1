@@ -76,12 +76,7 @@ body{
 .scene8{
     background-color: $scene5Gradient;
 }
-.man__head {
-    background-color: black;
+.clouds__1>*, .clouds__2>*{
+    background-color: white;
 }
-.man__body {
-    background-color: black;
-}
-.man__leg>* {
-    background-color: black;
-}
+
