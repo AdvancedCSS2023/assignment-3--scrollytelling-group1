@@ -44,6 +44,7 @@ To promote sustainability goal 14, the project employs a variety of technologies
 
 
 Who maintains and contributes to the project
+
 Since this project is a work on github, anyone who's a member of the community are allowed and able to contribute if they want to.
 The project is maintained and contributed by the team members which is listed in the github repository, 
 Elina, Johan, Jørgen and Solveig. 
