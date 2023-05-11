@@ -56,16 +56,16 @@
     }
 }
 
- @keyframes bottleThrow{
+@keyframes bottleThrow{
           0%{
             transform: translateY(4vw);
           }
           60%{
-            transform: translateX(20vw) translateY(-5vw);
+            transform: translateX(20vw) translateY(-5vw) rotate(-200deg);
           }
           
           100%{
-            transform: translateX(20vw) translateY(10vw);
+            transform: translateX(20vw) translateY(10vw) rotate(-400deg);
             position: fixed;
           }
         }
