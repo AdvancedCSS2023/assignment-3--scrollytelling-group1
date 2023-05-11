@@ -19,21 +19,7 @@ main{
     position: sticky;
     top: 25px;
   }
-/*dark mode */
-@media (prefers-color-scheme: dark) {
-  body {
-  background-color: black;
-  color: white;
-  }
-}
 
-/*light mode */
-@media (prefers-color-scheme: light) {
-  body {
-  background-color: white;
-  color: black;
-  }
-}
   /* general layout for side plant images*/
 .background-plants-right {
     width: 9vw;
