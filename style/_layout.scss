@@ -212,6 +212,13 @@ width: 35px;
   }
 /*Scene9*/
   .scene9 {
-    height: 100vh;
-    
+    height: 80vh;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .trash-bin {
+    position: relative;
+    transform: scale(0.4) translateY(100vh);
+    z-index: 2;
+
   }
