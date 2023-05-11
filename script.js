@@ -25,30 +25,33 @@ const plantObserverLeft = new IntersectionObserver(function(entries, observer) {
   });
 });
 
-
-// Observer for .fish-blue
-const fishBlueObserverRight = new IntersectionObserver(function(entries, observer) {
+// Observer for .removeBottleTrigger
+const removeBottleTriggerObserver = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {
-    if (entry.isIntersecting && !entry.target.classList.contains('animate-fish-right')) {
-      entry.target.classList.add('animate-fish-right');
+    const bottleElement = document.querySelector('.bottle');
+    const trashbinElement = document.querySelector('.trash-bin');
+    const trashExample1Element = document.querySelector('.trashExample1');
+    const trashExample2Element = document.querySelector('.trashExample2');
+    const trashExample3Element = document.querySelector('.trashExample3');
+    const trashExample4Element = document.querySelector('.trashExample4');
+    const trashExample5Element = document.querySelector('.trashExample5');
+    if (entry.isIntersecting && bottleElement && !bottleElement.classList.contains('removeBottle')) {
+      bottleElement.classList.remove('throwBottleAnimation');
+      trashbinElement.classList.add('trashBinFixed');
+      trashExample1Element.classList.add('showTrashExample1');
+      trashExample2Element.classList.add('showTrashExample2');
+      trashExample3Element.classList.add('showTrashExample3');
+      trashExample4Element.classList.add('showTrashExample4');
+      trashExample5Element.classList.add('showTrashExample5');
     }
   });
 });
 
-// Observer for .fish-black-left
-const fishBlackObserverLeft = new IntersectionObserver(function(entries, observer) {
+// Observer for Link reveal
+const linkcontainerObserver = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {
-    if (entry.isIntersecting && !entry.target.classList.contains('animate-fish-left')) {
-      entry.target.classList.add('animate-fish-left');
-    }
-  });
-});
-
-// Observer for .fish-black-right
-const fishBlackObserverRight = new IntersectionObserver(function(entries, observer) {
-  entries.forEach(entry => {
-    if (entry.isIntersecting && !entry.target.classList.contains('animate__blue-fish')) {
-      entry.target.classList.add('animate__blue-fish');
+    if (entry.isIntersecting && !entry.target.classList.contains('revealanimation')) {
+      entry.target.classList.add('revealanimation');
     }
   });
 });
@@ -57,10 +60,12 @@ const fishBlackObserverRight = new IntersectionObserver(function(entries, observ
 const textElements = document.querySelectorAll('.scene-text-conteiner');
 const plantElementsRight = document.querySelectorAll('.background-plants-right');
 const plantElementsleft = document.querySelectorAll('.background-plants-left');
-const h3Element = document.querySelector('h3');
-const fishBlueElementright = document.querySelector('.fish-blue');
+const bottleRemove = document.querySelectorAll('.removeBottleTrigger');
+const linkrevealelement = document.querySelectorAll('h4 a span');
 
 // Add observers to elements
 textElements.forEach(el => textObserver.observe(el));
 plantElementsRight.forEach(el => plantObserverRight.observe(el));
 plantElementsleft.forEach(el => plantObserverLeft.observe(el));
+bottleRemove.forEach(el => removeBottleTriggerObserver.observe(el));
+linkrevealelement.forEach(el => linkcontainerObserver.observe(el));
