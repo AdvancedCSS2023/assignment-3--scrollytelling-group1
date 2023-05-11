@@ -1,391 +1,518 @@
-
-@keyframes textboxInn{
-    0%{
-        transform: translateY(0);
-        opacity: 0;
-    }
-    100%{
-        transform: translateY(-40px);
-        opacity: 1;
-    }
+@keyframes textboxInn {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 1;
+  }
 }
 
-@keyframes plantLeftInn{
-    0%{
-        opacity: 1;
-        transform: rotate(13deg) translateX(-90px);
-    }
-    40%{
-        opacity: 1;
-        transform: rotate(38deg) translateX(0px);
-    }
-    60%{
-        opacity: 1;
-        transform: rotate(38deg) translateX(0px); 
-    }
-    80%{
-        opacity: 1;
-        transform: rotate(38deg) translateX(0px);
-    }
-    100%{
-        opacity: 1;
-        transform: rotate(38deg) translateX(0px);
-    }
+@keyframes plantLeftInn {
+  0% {
+    opacity: 1;
+    transform: rotate(13deg) translateX(-90px);
+  }
+  40% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+  60% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
 }
 
-@keyframes plantRightInn{
-    0%{
-        opacity: 1;
-        transform: rotate(-13deg) translateX(90px);
-    }
-    40%{
-        opacity: 1;
-        transform: rotate(-30deg) translateX(0px);
-    }
-    60%{
-        opacity: 1;
-        transform: rotate(-30deg) translateX(0px); 
-    }
-    80%{
-        opacity: 1;
-        transform: rotate(-30deg) translateX(0px);
-    }
-    100%{
-        opacity: 1;
-        transform: rotate(-30deg) translateX(0px);
-    }
+@keyframes plantRightInn {
+  0% {
+    opacity: 1;
+    transform: rotate(-13deg) translateX(90px);
+  }
+  40% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+  60% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
 }
 
-@keyframes bottleThrow{
-          0%{
-            transform: translateY(4vw);
-          }
-          60%{
-            transform: translateX(20vw) translateY(-5vw) rotate(-200deg);
-          }
-          
-          100%{
-            transform: translateX(20vw) translateY(10vw) rotate(-400deg);
-            position: fixed;
-          }
-        }
+@keyframes bottleThrow {
+  0% {
+    transform: translateY(4vw);
+  }
+  60% {
+    transform: translateX(20vw) translateY(-20vw) rotate(-200deg);
+  }
 
-.showTextAnimation{
-    animation-name: textboxInn;
-    transition: 0.8s;
-    animation-duration: 1s;
-    animation-delay: 0.7s;
-    animation-fill-mode: forwards;
+  100% {
+    transform: translateX(17vw) translateY(10vw) rotate(-400deg);
+    position: fixed;
+  }
 }
 
-.showPlantLeftAnimation{
-    animation-name: plantLeftInn;
-    transition: 0.8s;
-    animation-duration: 3s;
-    animation-delay: 0.9s;
-    animation-fill-mode: forwards;
-   }
+@keyframes trashbinFixedAnimation {
+  0% {
+  }
+  100% {
+    position: sticky;
+    top: 23vw;
+    left: 40vw;
+  }
+}
+
+.trashBinFixed {
+  animation-name: trashbinFixedAnimation;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample1 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample2 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample3 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample4 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample5 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.showTextAnimation {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.showPlantLeftAnimation {
+  animation-name: plantLeftInn;
+  transition: 0.8s;
+  animation-duration: 3s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
 
 .showPlantRightAnimation {
-    animation-name: plantRightInn;
-    animation-duration: 1s;
-    animation-delay: 0.9s;
-    animation-fill-mode: forwards;
+  animation-name: plantRightInn;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
 }
 
-.throwBottleAnimation{
-    animation-name: bottleThrow;
-    transition: 2s;
-    animation-duration: 3s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
+.throwBottleAnimation {
+  animation-name: bottleThrow;
+  transition: 2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
 }
-/*sun animation*/
-.sun{
-            animation-name: sunMove;
-            animation-duration: 2s;
-            animation-iteration-count: infinite;
-            animation-direction: alternate;
-        }
+.sun {
+  animation-name: sunMove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
 @keyframes sunMove {
   0% {
-    transform: scale(0.6);
+    transform: scale(0.7);
   }
   100% {
     transform: scale(0.8);
   }
 }
-/*man animation*/
-.man{
-    animation: walking 0.6s infinite, man-walking 5s forwards;
+
+/* Man animations */
+.man {
+  animation: walking 0.6s infinite, man-walking 5s forwards;
 }
 @keyframes walking {
-    0% {
-      transform: translateY(0);
-    }
-    50% {
-      transform: translateY(-20px);
-    }
-    100% {
-      transform: translateY(0);
-    }
+  0% {
+    transform: translateY(0);
   }
-  @keyframes man-walking {
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes man-walking {
   0% {
     left: -50%;
   }
-  50%{
-      left: 25%;
-   }
+  50% {
+    left: 25%;
+  }
   100% {
     left: -50%;
-  }
-}
-/*clouds animation*/
-.clouds__1, .clouds__2{
-     animation: cloudMove 10s linear infinite;
-}
-@keyframes cloudMove {
-  0% {
-    transform: translateX(-50%);
-  }
-  100% {
-    transform: translateX(100%);
   }
 }
 
 /*Waves animation*/
- .waves-1 {
-      animation: animate__wave-1 10s linear infinite;
-     
-    }
-    @keyframes animate__wave-1 {
-      0% {
-        background-position-x: 0vw;
-      }
-      100% {
-        background-position-x: -80vw;
-      }
-    }
-  
-    .waves-2 {
-      animation: animate__wave-2 20s linear infinite;
-      animation-delay: 0s;
-    }
-    @keyframes animate__wave-2 {
-      0% {
-        background-position-x: 0vw;
-      }
-      100% {
-        background-position-x: 80vw;
-      }
-    }
+.waves-1 {
+  animation: animate__wave-1 10s linear;
+  animation-iteration-count: 1000;
+}
+@keyframes animate__wave-1 {
+  0% {
+    background-position-x: 0vw;
+  }
+  100% {
+    background-position-x: -80vw;
+  }
+}
 
-    .waves-3 {
-      animation: animate__wave-3 10s linear infinite;
-      animation-delay: 5s;
-    }
-    @keyframes animate__wave-3 {
-      0% {
-        background-position-x: 10vw;
-      }
-      100% {
-        background-position-x: -100vw;
-      }
-    }
+.waves-2 {
+  animation: animate__wave-2 20s linear infinite;
+  animation-delay: 0s;
+}
+@keyframes animate__wave-2 {
+  0% {
+    background-position-x: 0vw;
+  }
+  100% {
+    background-position-x: 80vw;
+  }
+}
 
-    .waves-4 {
-        animation: animate__wave-4 30s linear infinite;
-        z-index: 1000;
-  
-      }
-      @keyframes animate__wave-4 {
-        0% {
-          background-position-x: 0vw;
-        }
-        100% {
-          background-position-x: 80vw;
-        }
-      }
- /*Fish scene 2*/
-      .fish-blue {
-        position: relative;
-        animation: animate__blue-fish 20s linear infinite;
-        overflow: hidden;
-      }
-      @keyframes animate__blue-fish {
-        0% {
-          left: 100vw;
-        
-        }
-        80% {
-          left: 0vw;
-       
-        }
-        100% {
-          left: -30vw;
-          opacity: 80%;
-        }
-      }
+.waves-3 {
+  animation: animate__wave-3 10s linear infinite;
+  animation-delay: 5s;
+}
+@keyframes animate__wave-3 {
+  0% {
+    background-position-x: 10vw;
+  }
+  100% {
+    background-position-x: -100vw;
+  }
+}
 
-      .fish-blue .fish-blue-small {
-        position: relative;
-        animation: animate-blue-fish-small 20s linear infinite;
-      
-      }
-      @keyframes animate-blue-fish-small {
-        0% {
-          transform: rotate(20deg) translateY(-60vh) scale(0.5);
-        
-        }
-        80% {
-          transform: rotate(0deg) scale(0.5) translateY(-60vh);
-        }
-        100% {
-          opacity: 100%;
-          transform: scale(0.5) translateY(-50vh) rotate(10deg);
-        }
-      }
+.waves-4 {
+  animation: animate__wave-4 30s linear;
+  z-index: 1000;
+  animation-iteration-count: 1000;
+}
+@keyframes animate__wave-4 {
+  0% {
+    background-position-x: 0vw;
+  }
+  100% {
+    background-position-x: 80vw;
+  }
+}
 
-      .fish-black-right {
-        position: absolute;
-        animation: animate-fish-right 10s linear forwards;
-        animation-iteration-count: 1;
-      }
-    
-      @keyframes animate-fish-right {
-       
-        0% {
-          transform: scale(0.3) rotate(-45deg);
-          opacity: 50%;
-        }
-        50% {
-          transform: translateX(10vw) translateY(10vw) scale(0.3) ;
-          opacity: 80%;
-        }
-        80% {
-          transform: translateX(-30vw) scale(0.3);
-          opacity: 100%;
-        }
-        100% {
-          transform: translateX(-100vw) scale(0.3);
-          opacity: 100%;
-        }
-      }
-      
-      .fish-black-left {
-        position: absolute;
-        animation: animate-fish-left 20s linear infinite;
-      
-        overflow: hidden;
-      }
-      @keyframes animate-fish-left {
-        0% {
-          right: 100vw;
-          opacity: 100%;
-         top: 0vh;
-        }
-        100% {
-          right: 0vw;
-          opacity: 80%;
-          top: 10vh;
-
-        }
-       
-      }
-
-      .deadfish {
-      position: relative;
-      animation: dead-fish 20s linear forwards;
-      }
-      @keyframes dead-fish {
-        0% {
-        transform: translateY(0vh) scale(0.3);
-        opacity: 100%;
-        }
-        100% {
-          transform: translateY(90vh) scale(0.3);
-        opacity: 20%;
-        }
-       
-      }
-
- @media (prefers-reduced-motion) {
-        /*Sun animation*/
-        .sun {
-          animation-name: sunMove 2s infinite alternate;
-      }
-        @keyframes sunMove {
-      0% {
+/* MEDIA CODE */
+/* reduce motion*/
+@media (prefers-reduced-motion) {
+  /*Sun animation*/
+  .sun {
+    animation-name: sunMove 2s infinite alternate;
+  }
+  @keyframes sunMove {
+    0% {
       transform: scale(0.8);
-      }
-      100% {
+    }
+    100% {
       transform: scale(0.8);
-      }
-      }
-        /*Waves animation*/
-       .waves-1 {
-        animation: animate__wave-1 50s linear;
-        animation-iteration-count: 1000;
-      }
-      @keyframes animate__wave-1 {
-        0% {
-          background-position-x: 0vw;
-        }
-        100% {
-          background-position-x: -80vw;
-        }
-      }
-      
-      .waves-2 {
-        animation: animate__wave-2 30s linear infinite;
-        animation-delay: 0s;
-      }
-      @keyframes animate__wave-2 {
-        0% {
-          background-position-x: 0vw;
-        }
-        100% {
-          background-position-x: 80vw;
-        }
-      }
-      
-      .waves-3 {
-        animation: animate__wave-3 20s linear infinite;
-        animation-delay: 5s;
-      }
-      @keyframes animate__wave-3 {
-        0% {
-          background-position-x: 10vw;
-        }
-        100% {
-          background-position-x: -100vw;
-        }
-      }
-      
-      .waves-4 {
-          animation: animate__wave-4 40s linear infinite;
-        }
-        @keyframes animate__wave-4 {
-          0% {
-            background-position-x: 0vw;
-          }
-          100% {
-            background-position-x: 80vw;
-          }
-        }
-        
-        @keyframes bottleThrow{
-          0%{
-            transform: translateY(4vw);
-          }
-          60%{
-            transform: translateX(20vw) translateY(-5vw);
-          }
-          
-          100%{
-            transform: translateX(20vw) translateY(10vw);
-            position: fixed;
-          }
-        }
-      }
+    }
+  }
+  /*Waves animation*/
+  .waves-1 {
+    animation: animate__wave-1 50s linear;
+    animation-iteration-count: 1000;
+  }
+  @keyframes animate__wave-1 {
+    0% {
+      background-position-x: 0vw;
+    }
+    100% {
+      background-position-x: -80vw;
+    }
+  }
+
+  .waves-2 {
+    animation: animate__wave-2 30s linear infinite;
+    animation-delay: 0s;
+  }
+  @keyframes animate__wave-2 {
+    0% {
+      background-position-x: 0vw;
+    }
+    100% {
+      background-position-x: 80vw;
+    }
+  }
+
+  .waves-3 {
+    animation: animate__wave-3 20s linear infinite;
+    animation-delay: 5s;
+  }
+  @keyframes animate__wave-3 {
+    0% {
+      background-position-x: 10vw;
+    }
+    100% {
+      background-position-x: -100vw;
+    }
+  }
+
+  .waves-4 {
+    animation: animate__wave-4 40s linear infinite;
+  }
+  @keyframes animate__wave-4 {
+    0% {
+      background-position-x: 0vw;
+    }
+    100% {
+      background-position-x: 80vw;
+    }
+  }
+
+  @keyframes bottleThrow {
+    0% {
+      transform: translateY(4vw);
+    }
+    60% {
+      transform: translateX(20vw) translateY(-5vw);
+    }
+
+    100% {
+      transform: translateX(20vw) translateY(10vw);
+      position: fixed;
+    }
+  }
+}
+
+/* Fish animations */
+
+@keyframes fishSwimAnimation1 {
+  0% {
+    transform: translateY(0);
+    left: 0;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 90vw;
+  }
+  50%{
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px)scalex(-1);
+    left: 0;
+  }
+}
+
+@keyframes fishSwimAnimation2 {
+  0% {
+    transform: translateY(0);
+    left: 0;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 90vw;
+  }
+  50%{
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px)scalex(-1);
+    left: 0;
+  }
+}
+
+@keyframes fishSwimAnimation3 {
+  0% {
+    transform: translateY(0);
+    left: 0;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 40vw;
+  }
+  50%{
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px)scalex(-1);
+    left: 0;
+  }
+}
+
+@keyframes fishSwimAnimation4 {
+  0% {
+    transform: translateY(0);
+    left: 0;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 3vw;
+  }
+  50%{
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px)scalex(-1);
+    left: 0;
+  }
+}
+
+@keyframes fishSwimAnimation5 {
+  0% {
+    transform: translateY(0);
+    left: 80vw;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 70vw;
+  }
+  50%{
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px)scalex(-1);
+    left: 80vw;
+  }
+}
+
+.scene2Fish1 {
+  position: absolute;
+  animation-name: fishSwimAnimation1;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+
+.scene2Fish2 {
+  position: absolute;
+  animation-name: fishSwimAnimation3;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+
+.scene3Fish1 {
+  position: absolute;
+  animation-name: fishSwimAnimation2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.scene3Fish2 {
+  position: absolute;
+  animation-name: fishSwimAnimation3;
+  animation-delay: 2s;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+.scene4Fish1 {
+  position: absolute;
+  animation-name: fishSwimAnimation4;
+  animation-delay: 2s;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.scene5Fish1 {
+  position: absolute;
+  animation-name: fishSwimAnimation5;
+  animation-delay: 2s;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+/* read more reveal */
+.revealanimation {
+  display: block;
+  animation-name: reveal;
+  animation-duration: 1.5s;
+  transition: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0,100%);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
