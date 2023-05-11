@@ -136,13 +136,11 @@ main{
         opacity: 0.5;
       }
    
- /*Scene 2 Fish*/
+/*Scene 2 Fish*/
    .fish-blue {
     transform: scale(0.3);
    }
-  .fish-black {
-  transform: scale(0.3);
-  
+  .fish-blue .fish-blue-small {
   }
   .fish-black-right {
     transform: scale(0.3);
@@ -151,6 +149,9 @@ main{
     transform: scale(0.3);
     top: 10vw;
   }
+.deadfish {
+  transform: scale(0.3);
+}
 
 .scene6{
     height: 100vh;
