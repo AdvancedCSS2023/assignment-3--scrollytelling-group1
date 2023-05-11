@@ -47,7 +47,8 @@ main{
 .clouds{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin-bottom: 200px;
+     margin-top: 10%;
+    margin-left: 10%;
 }
 .clouds__1, .clouds__2{
     display: grid;
