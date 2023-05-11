@@ -196,7 +196,7 @@
           background-position-x: 80vw;
         }
       }
-  /*Fish scene 2*/
+ /*Fish scene 2*/
       .fish-blue {
         position: relative;
         animation: animate__blue-fish 20s linear infinite;
@@ -205,64 +205,67 @@
       @keyframes animate__blue-fish {
         0% {
           left: 100vw;
-          opacity: 0%;
-        }
-        80% {
-          left: 0vw;
-          opacity: 80%;
-        }
-        100% {
-          left: -30vw;
-        }
-      }
-      .fish-black {
-        position: absolute;
-        animation: animate__black-fish 20s linear infinite;
-        overflow: hidden;
-      }
-      @keyframes animate__black-fish {
-        0% {
-          left: 100vw;
-          
-          opacity: 100%;
-          z-index: 100;
-        }
-        80% {
-          left: 50vw;
-          opacity: 80%;
-        }
-        100% {
-          left: -30vw;
         
         }
+        80% {
+          left: 0vw;
+       
+        }
+        100% {
+          left: -30vw;
+          opacity: 80%;
+        }
       }
+
+      .fish-blue .fish-blue-small {
+        position: relative;
+        animation: animate-blue-fish-small 20s linear infinite;
+      
+      }
+      @keyframes animate-blue-fish-small {
+        0% {
+          transform: rotate(20deg) translateY(-60vh) scale(0.5);
+        
+        }
+        80% {
+          transform: rotate(0deg) scale(0.5) translateY(-60vh);
+        }
+        100% {
+          opacity: 100%;
+          transform: scale(0.5) translateY(-50vh) rotate(10deg);
+        }
+      }
+
       .fish-black-right {
         position: absolute;
-        animation: animate-fish-right 10s linear infinite;
-        overflow: hidden;
+        animation: animate-fish-right 10s linear forwards;
+        animation-iteration-count: 1;
       }
+    
       @keyframes animate-fish-right {
+       
         0% {
-          top: 0vh;
-          left: 0vw;
-          opacity: 100%;
           transform: scale(0.3) rotate(-45deg);
+          opacity: 50%;
         }
         50% {
-          top: 10vh;
-          left: 20vw;
+          transform: translateX(10vw) translateY(10vw) scale(0.3) ;
+          opacity: 80%;
+        }
+        80% {
+          transform: translateX(-30vw) scale(0.3);
           opacity: 100%;
         }
         100% {
-          transform: scale(0.3) rotate(-20deg);
-          top: 30vh;
-          left: -50vw;
+          transform: translateX(-100vw) scale(0.3);
           opacity: 100%;
         }
       }
+      
       .fish-black-left {
         position: absolute;
         animation: animate-fish-left 20s linear infinite;
+      
         overflow: hidden;
       }
       @keyframes animate-fish-left {
@@ -276,6 +279,22 @@
           opacity: 80%;
           top: 10vh;
 
+        }
+       
+      }
+
+      .deadfish {
+      position: relative;
+      animation: dead-fish 20s linear forwards;
+      }
+      @keyframes dead-fish {
+        0% {
+        transform: translateY(0vh) scale(0.3);
+        opacity: 100%;
+        }
+        100% {
+          transform: translateY(90vh) scale(0.3);
+        opacity: 20%;
         }
        
       }
