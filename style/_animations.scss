@@ -145,8 +145,8 @@
 
 /*Waves animation*/
  .waves-1 {
-      animation: animate__wave-1 10s linear;
-      animation-iteration-count: 1000;
+      animation: animate__wave-1 10s linear infinite;
+     
     }
     @keyframes animate__wave-1 {
       0% {
@@ -184,9 +184,9 @@
     }
 
     .waves-4 {
-        animation: animate__wave-4 30s linear;
+        animation: animate__wave-4 30s linear infinite;
         z-index: 1000;
-        animation-iteration-count: 1000;
+  
       }
       @keyframes animate__wave-4 {
         0% {
@@ -299,7 +299,19 @@
        
       }
 
-   @media (prefers-reduced-motion) {
+ @media (prefers-reduced-motion) {
+        /*Sun animation*/
+        .sun {
+          animation-name: sunMove 2s infinite alternate;
+      }
+        @keyframes sunMove {
+      0% {
+      transform: scale(0.8);
+      }
+      100% {
+      transform: scale(0.8);
+      }
+      }
         /*Waves animation*/
        .waves-1 {
         animation: animate__wave-1 50s linear;
@@ -352,3 +364,16 @@
           }
         }
       }
+  @keyframes bottleThrow{
+        0%{
+            transform: translateY(4vw);
+        }
+        60%{
+            transform: translateX(20vw) translateY(-5vw);
+        }
+        
+        100%{
+            transform: translateX(20vw) translateY(10vw);
+            position: fixed;
+        }
+    }
