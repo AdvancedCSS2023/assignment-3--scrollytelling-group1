@@ -298,3 +298,57 @@
         }
        
       }
+
+   @media (prefers-reduced-motion) {
+        /*Waves animation*/
+       .waves-1 {
+        animation: animate__wave-1 50s linear;
+        animation-iteration-count: 1000;
+      }
+      @keyframes animate__wave-1 {
+        0% {
+          background-position-x: 0vw;
+        }
+        100% {
+          background-position-x: -80vw;
+        }
+      }
+      
+      .waves-2 {
+        animation: animate__wave-2 30s linear infinite;
+        animation-delay: 0s;
+      }
+      @keyframes animate__wave-2 {
+        0% {
+          background-position-x: 0vw;
+        }
+        100% {
+          background-position-x: 80vw;
+        }
+      }
+      
+      .waves-3 {
+        animation: animate__wave-3 20s linear infinite;
+        animation-delay: 5s;
+      }
+      @keyframes animate__wave-3 {
+        0% {
+          background-position-x: 10vw;
+        }
+        100% {
+          background-position-x: -100vw;
+        }
+      }
+      
+      .waves-4 {
+          animation: animate__wave-4 40s linear infinite;
+        }
+        @keyframes animate__wave-4 {
+          0% {
+            background-position-x: 0vw;
+          }
+          100% {
+            background-position-x: 80vw;
+          }
+        }
+      }
