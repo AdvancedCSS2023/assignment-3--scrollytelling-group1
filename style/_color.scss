@@ -115,15 +115,8 @@ a{
 .scene10{
     background-color: $trashcanBackground;
 }
-
-.man__head {
-  background-color: black;
-}
-.man__body {
-  background-color: black;
-}
-.man__leg > * {
-  background-color: black;
+.clouds__1>*, .clouds__2>*{
+    background-color: white;
 }
 
 main {
