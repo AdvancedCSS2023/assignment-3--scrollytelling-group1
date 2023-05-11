@@ -141,6 +141,18 @@
     left: -50%;
   }
 }
+/*clouds animation*/
+.clouds__1, .clouds__2{
+     animation: cloudMove 10s linear infinite;
+}
+@keyframes cloudMove {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 
 /*Waves animation*/
  .waves-1 {
