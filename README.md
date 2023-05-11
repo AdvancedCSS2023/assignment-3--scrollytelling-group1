@@ -16,3 +16,36 @@ The primary objective of the project is to educate users about Sustainable Devel
 Why the project is useful
 
 This project aims to raise awareness about United Nations Sustainable Development Goal 14: Life Below Water. Through an engaging scrollytelling experience, it educates individuals about the importance of protecting and sustainably managing our oceans, seas, and marine resources. By showcasing the challenges faced by marine ecosystems and offering actionable solutions, the project encourages people to become advocates for Goal 14 and contribute to a healthier and more sustainable future for our planet.
+
+
+How users can get started with the project
+
+1. To get started with the project you can Visit the GitHub Pages link where the project is published 
+
+2. Explore the visually captivating animations and educational resources on the website to support Sustainable Development Goal 14, which aims to conserve and sustainably use the oceans, seas, and marine resources.
+ 
+3. For developers interested in contributing to the project,begin by forking the repository and cloning it to your local machine.
+ 
+4. Next, create a new branch for the feature you'd like to work on and start making changes to the code.
+ 
+5. Once you've completed your changes, push the branch to your forked repository and create a pull request to merge your changes into     the original repository. Join the effort to protect our oceans and promote sustainable use of marine resources by contributing to this important project!
+
+
+
+
+
+Where users can get help with your project
+
+Please consult the README file located in the project's GitHub repository for guidance.
+If you encounter any bugs or issues, please utilize the "Issues" section within the GitHub repository to report them. 
+For assistance or inquiries regarding the project, feel free to contact the team members listed as contributors in the GitHub repository. 
+
+Which technology is used
+
+To promote sustainability goal 14, the project employs a variety of technologies to create an animated and scrollable website. These technologies include advanced CSS features, CSS architecture, Sass, BEM, SVG, keyframe animations, transitions, transformations, and Scrollytelling using Intersection Observer and Javascript. By utilizing these technologies, the project is visually appealing, informative, and accessible to a diverse range of users. 
+
+
+Who maintains and contributes to the project
+
+The project is maintained and contributed by the team members which is listed in the github repository, 
+Elina, Johan, Jørgen and Solveig. 
