@@ -48,9 +48,43 @@ main {
   transform: translateY(4vw);
   z-index: 2;
 }
-.cloud {
-  width: 50%;
+.clouds{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     margin-top: 10%;
+    margin-left: 10%;
 }
+.clouds__1, .clouds__2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100px;
+    height: 10px;
+}
+.clouds__1>*, .clouds__2>*{
+    border-radius: 0;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+}
+.clouds__1{
+    margin-top: 30%;
+}
+.clouds__1--1, .clouds__2--1{
+    width:40px;
+  height:20px;
+}
+.clouds__1--2, .clouds__2--2{
+    margin-left: -8px;
+  margin-top: 5px;
+  height: 15px;
+  width: 50px;
+}
+.clouds__1--3, .clouds__2--3{
+    margin-left: 20px;
+  margin-top: 10px;
+  height: 10px;
+width: 35px;
+}
+  
 .dock {
   position: relative;
   width: 50vw;
