@@ -222,28 +222,46 @@ width: 35px;
     padding-top: 5vw;
   }
 }
-
 .scene10 {
   display: grid;
   place-items: center;
   height: 100vh;
   text-align: center;
+  max-width: 100%;
+}
 
-  .linkContainer {
-    padding: 100px 20px 0;
-    margin: 0 auto;
-  }
-  h4 {
-    margin: 0;
-    text-align: center;
-    overflow: hidden;
-    line-height: 1;
-  }
-  h4:hover{
-    transition: 0.2s;
-    cursor: pointer;
-    transform: skewX(-5deg);
-  }
+/*SVG*/
+
+.head {
+  transform: translateY(17vh) translateX(-3vw);
+}
+.left-eye__pupil {
+  transform: translateX(0.4vw) translateY(-0.4vh);
+}
+.left-eye__ball {
+  
+}
+.left-eye {
+  transform: translateY(12vh) translateX(-2vw);
+}
+.right-eye__pupil {
+  transform: translateX(0.3vw) translateY(-0.4vh);
+
+}
+.right-eye__ball {
+ 
+}
+
+.right-eye {
+  position: relative;
+  transform: translateY(11vh) translateX(0vw);
+}
+
+.speech-bubble {
+  transform: translateX(-2vw) translateY(7vh) rotate(-10deg) scale(1.1); 
+}
+.head-speech {
+  transform: translateY(10vh);
 }
 
 /* Style fishes */
