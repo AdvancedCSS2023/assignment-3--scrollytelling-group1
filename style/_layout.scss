@@ -230,39 +230,49 @@ width: 35px;
   max-width: 100%;
 }
 
+
 /*SVG*/
 
 .head {
-  transform: translateY(17vh) translateX(-3vw);
+  transform: translateY(170px) translateX(-50px);
 }
+
+.hair {
+  transform: scale(0.2) translateY(1100px) translateX(300px) rotate(-15deg);
+}
+
 .left-eye__pupil {
   transform: translateX(0.4vw) translateY(-0.4vh);
 }
-.left-eye__ball {
-  
-}
+
 .left-eye {
-  transform: translateY(12vh) translateX(-2vw);
+  transform: translateY(120px) translateX(-20px);
 }
 .right-eye__pupil {
-  transform: translateX(0.3vw) translateY(-0.4vh);
-
-}
-.right-eye__ball {
- 
+  transform: translateX(5px) translateY(-4px);
 }
 
 .right-eye {
-  position: relative;
-  transform: translateY(11vh) translateX(0vw);
+  transform: translateY(120px) translateX(18px);
 }
 
-.speech-bubble {
-  transform: translateX(-2vw) translateY(7vh) rotate(-10deg) scale(1.1); 
-}
+
 .head-speech {
   transform: translateY(10vh);
 }
+
+.mouth {
+  transform: translateY(330px) translateX(170px) scale(0.15);
+}
+
+.speech-bubble {
+  transform: translateX(10px) translateY(50px) rotate(-10deg) scale(1.1); 
+}
+
+.body-svg {
+  transform: scale(0.3) translateY(-1200px) translateX(-900px);
+}
+
 
 /* Style fishes */
 .scene2Fish1{
