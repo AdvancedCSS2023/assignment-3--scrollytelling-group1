@@ -28,13 +28,13 @@ const plantObserverLeft = new IntersectionObserver(function(entries, observer) {
 // Observer for .removeBottleTrigger
 const removeBottleTriggerObserver = new IntersectionObserver(function(entries, observer) {
   entries.forEach(entry => {
-    const bottleElement = document.querySelector('.bottle');
-    const trashbinElement = document.querySelector('.trash-bin');
-    const trashExample1Element = document.querySelector('.trashExample1');
-    const trashExample2Element = document.querySelector('.trashExample2');
-    const trashExample3Element = document.querySelector('.trashExample3');
-    const trashExample4Element = document.querySelector('.trashExample4');
-    const trashExample5Element = document.querySelector('.trashExample5');
+    const bottleElement = document.querySelector('.scene1__content-bottle');
+    const trashbinElement = document.querySelector('.scene9__trash-bin');
+    const trashExample1Element = document.querySelector('.scene9__img-container-trashExample1');
+    const trashExample2Element = document.querySelector('.scene9__img-container-trashExample2');
+    const trashExample3Element = document.querySelector('.scene9__img-container-trashExample3');
+    const trashExample4Element = document.querySelector('.scene9__img-container-trashExample4');
+    const trashExample5Element = document.querySelector('.scene9__img-container-trashExample5');
     if (entry.isIntersecting && bottleElement && !bottleElement.classList.contains('removeBottle')) {
       bottleElement.classList.remove('throwBottleAnimation');
       trashbinElement.classList.add('trashBinFixed');
@@ -57,10 +57,10 @@ const linkcontainerObserver = new IntersectionObserver(function(entries, observe
 });
 
 // Elements to observe
-const textElements = document.querySelectorAll('.scene-text-conteiner');
-const plantElementsRight = document.querySelectorAll('.background-plants-right');
-const plantElementsleft = document.querySelectorAll('.background-plants-left');
-const bottleRemove = document.querySelectorAll('.removeBottleTrigger');
+const textElements = document.querySelectorAll('.text-container');
+const plantElementsRight = document.querySelectorAll('.plant-container__background-plants-right');
+const plantElementsleft = document.querySelectorAll('.plant-container__background-plants-left');
+const bottleRemove = document.querySelectorAll('.scene9__remove-bottle-trigger');
 const linkrevealelement = document.querySelectorAll('h4 a span');
 
 // Add observers to elements
