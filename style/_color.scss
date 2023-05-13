@@ -67,25 +67,21 @@ body {
   color: $darkSceneFontColor;
 }
 
-h4{
-  border-bottom: solid $darkSceneFontColor 5px;
-}
-
 a{
   color: $darkSceneFontColor;
 }
 
 /*Wave url*/
-.waves-1 {
+.waves__1 {
   background: $urlWave;
 }
-.waves-2 {
+.waves__2 {
   background: $urlWave;
 }
-.waves-3 {
+.waves__3 {
   background: $urlWave;
 }
-.waves-4 {
+.waves__4 {
   background: $urlWave;
 }
 .scene3 {
