@@ -16,7 +16,7 @@ main {
 }
 
 /* styles the size of the textboxes */
-.scene-text-conteiner {
+.text-container {
   width: 30vw;
   margin: 0 auto;
   opacity: 0;
@@ -25,23 +25,23 @@ main {
 }
 
 /* general layout for side plant images*/
-.background-plants-right {
+.plant-container__background-plants-right {
   width: 9vw;
   float: right;
   opacity: 0;
 }
 
-.plantContainer {
+.plant-container {
   overflow: hidden;
 }
 
-.background-plants-left {
+.plant-container__background-plants-left {
   width: 9vw;
   opacity: 0;
 }
 
 /* Style for scene 1 and the elenent in it */
-.bottle {
+.scene1__content-bottle {
   position: absolute;
   width: 5vw;
   left: 32vw;
@@ -85,7 +85,7 @@ main {
 width: 35px;
 }
   
-.dock {
+.scene1__content-dock {
   position: relative;
   width: 50vw;
   z-index: 2;
@@ -96,7 +96,7 @@ width: 35px;
   width: 30%;
 }
 
-.man {
+.scene1__content-man {
   width: 10%;
   position: absolute;
   margin-top: -3%;
@@ -112,7 +112,7 @@ width: 35px;
   z-index: 0;
 }
 
-.waves-1 {
+.waves__1 {
   position: absolute;
   top: 0vh;
   left: 0vw;
@@ -123,7 +123,7 @@ width: 35px;
   opacity: 0.7;
 }
 
-.waves-2 {
+.waves__2 {
   position: absolute;
   bottom: 20vh;
   left: 0vw;
@@ -135,7 +135,7 @@ width: 35px;
   opacity: 0.6;
 }
 
-.waves-3 {
+.waves__3 {
   position: absolute;
   bottom: 20vh;
   left: 0vw;
@@ -147,7 +147,7 @@ width: 35px;
   opacity: 1;
 }
 
-.waves-4 {
+.waves__4 {
   position: absolute;
   top: 0vh;
   left: -10vw;
@@ -194,7 +194,7 @@ width: 35px;
 .scene9 {
   height: 120vh;
 
-  .img-container {
+  .scene9__img-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     margin: 3vw 0;
@@ -209,7 +209,7 @@ width: 35px;
     }
   }
 
-  .trash-bin {
+  .scene9__trash-bin {
     position: relative;
     width: 20vw;
     min-width: 200px;
@@ -275,43 +275,43 @@ width: 35px;
 
 
 /* Style fishes */
-.scene2Fish1{
+.plant-container__scene2Fish1{
   width: 10vw;
   z-index: 0;
   opacity: 20%;
 }
 
-.scene2Fish2{
+.scene2__scene2Fish2{
   width: 10vw;
   z-index: 0;
   opacity: 30%;
 }
 
-.scene3Fish1{
+.plant-container__fish1{
   width: 7vw;
   z-index: 0;
   opacity: 90%;
 }
 
-.scene3Fish2{
+.plant-container-fish1{
   width: 7vw;
   z-index: 0;
   opacity: 10%;
 }
 
-.scene3Fish2{
+.scene3__scene3Fish2{
   width: 7vw;
   z-index: 0;
   opacity: 45%;
 }
 
-.scene4Fish1{
+.scene4__scene4Fish1{
   width: 15vw;
   z-index: 0;
   opacity: 65%;
 }
 
-.scene5Fish1{
+.scene5__scene5Fish1{
   width: 15vw;
   z-index: 0;
   opacity: 65%;
