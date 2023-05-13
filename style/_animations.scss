@@ -528,3 +528,54 @@
     transform: translate(0,0);
   }
 }
+
+
+/*Eyes and mouth moving*/
+.right-eye__pupil {
+  animation: eyes linear 1s forwards;
+}
+.right-eye {
+  animation: rightEye linear 1s forwards;
+}
+
+@keyframes eyes {
+  100% {
+    transform: translateX(1px) translateY(1px);
+  }
+}
+
+@keyframes rightEye {
+  100% {
+    transform: translateX(-30px) translateY(130px);
+  }
+}
+
+.left-eye {
+  animation: leftEye linear 1s forwards;
+}
+
+.left-eye__pupil {
+  animation: eyes linear 1s forwards;
+}
+
+@keyframes leftEyePupil {
+  100% {
+    transform: translateX(-70px) translateY(130px);
+  }
+}
+
+@keyframes leftEye {
+  100% {
+    transform: translateX(-70px) translateY(130px);
+  }
+}
+
+.mouth {
+  animation: mouthAnimation linear 1s forwards;
+}
+
+@keyframes mouthAnimation {
+  100% {
+    transform:  translateY(350px) translateX(110px) scale(0.15);
+  }
+}
