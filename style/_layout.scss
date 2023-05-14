@@ -270,12 +270,8 @@ width: 35px;
   }
 
 
-.test{
+.pop-up{
   display: none;
-}
-
-body{
-  background-color: white;
 }
 }
 
@@ -293,7 +289,7 @@ body{
   main{
     display: none;
   }
-  .test{
+  .pop-up{
       display: grid;
       place-items: center;
       font-size: 50px;
