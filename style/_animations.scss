@@ -530,7 +530,25 @@
 }
 
 
-/*Eyes and mouth moving*/
+/*SVG animations*/
+.head-speech {
+  animation: svg-person linear 5s forwards;
+}
+.tshirt {
+  animation: svg-tshirt linear 5s forwards;
+}
+@keyframes svg-tshirt {
+  100% {
+    transform: scale(0.4) translateY(-1080px) translateX(-250px);
+
+  }
+}
+@keyframes svg-person {
+  100% {
+    transform: translateX(90px) translateY(-13vh);
+  }
+}
+
 .right-eye__pupil {
   animation: eyes linear 1s forwards;
 }
@@ -538,13 +556,13 @@
   animation: rightEye linear 1s forwards;
 }
 
-@keyframes eyes {
+@keyframes eyes1 {
   100% {
     transform: translateX(1px) translateY(1px);
   }
 }
 
-@keyframes rightEye {
+@keyframes rightEye1 {
   100% {
     transform: translateX(-30px) translateY(130px);
   }
@@ -564,9 +582,9 @@
   }
 }
 
-@keyframes leftEye {
+@keyframes leftEye1 {
   100% {
-    transform: translateX(-70px) translateY(130px);
+    transform: translateX(0px) translateY(130px);
   }
 }
 
@@ -579,3 +597,4 @@
     transform:  translateY(350px) translateX(110px) scale(0.15);
   }
 }
+
