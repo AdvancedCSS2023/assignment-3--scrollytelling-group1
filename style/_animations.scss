@@ -531,6 +531,23 @@
 
 
 /*SVG animations*/
+
+.head {
+  animation: head-animation linear 5s infinite;
+}
+@keyframes head-animation {
+  50% {
+    transform: translateY(175px) translateX(-50px);
+  }
+  100% {
+    transform: translateY(170px) translateX(-50px);
+
+  }
+}
+
+
+/*
+
 .head-speech {
   animation: svg-person linear 5s forwards;
 }
@@ -597,4 +614,4 @@
     transform:  translateY(350px) translateX(110px) scale(0.15);
   }
 }
-
+*/
