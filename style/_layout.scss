@@ -1,0 +1,346 @@
+body {
+  margin: 0;
+}
+a{
+text-decoration: none;
+}
+
+/* Gives the first 5 scenes a grid layout */
+main {
+  & > div:nth-of-type(-n + 5) {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    position: relative;
+  }
+}
+
+/* styles the size of the textboxes */
+.text-container {
+  width: 30vw;
+  margin: 0 auto;
+  opacity: 0;
+  position: sticky;
+  top: 25px;
+}
+
+/* general layout for side plant images*/
+.plant-container__background-plants-right {
+  width: 9vw;
+  float: right;
+  opacity: 0;
+}
+
+.plant-container {
+  overflow: hidden;
+}
+
+.plant-container__background-plants-left {
+  width: 9vw;
+  opacity: 0;
+}
+
+/* Style for scene 1 and the elenent in it */
+.scene1__content-bottle {
+  position: absolute;
+  width: 5vw;
+  left: 32vw;
+  transform: translateY(4vw);
+  z-index: 2;
+}
+.clouds{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+     margin-top: 10%;
+    margin-left: 10%;
+}
+.clouds__1, .clouds__2{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100px;
+    height: 10px;
+}
+.clouds__1>*, .clouds__2>*{
+    border-radius: 0;
+  border-top-left-radius: 50% 100%;
+  border-top-right-radius: 50% 100%;
+}
+.clouds__1{
+    margin-top: 30%;
+}
+.clouds__1--1, .clouds__2--1{
+    width:40px;
+  height:20px;
+}
+.clouds__1--2, .clouds__2--2{
+    margin-left: -8px;
+  margin-top: 5px;
+  height: 15px;
+  width: 50px;
+}
+.clouds__1--3, .clouds__2--3{
+    margin-left: 20px;
+  margin-top: 10px;
+  height: 10px;
+width: 35px;
+}
+  
+.scene1__content-dock {
+  position: relative;
+  width: 50vw;
+  z-index: 2;
+}
+.sun {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30%;
+}
+
+.scene1__content-man {
+  width: 10%;
+  position: absolute;
+  margin-top: -3%;
+  left: -50%;
+  z-index: 3;
+}
+
+.waves {
+  position: absolute;
+  width: 100vw;
+  top: 58%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.waves__1 {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100px;
+  background-repeat: repeat-x;
+  background-size: 1000px 100px;
+  opacity: 0.7;
+}
+
+.waves__2 {
+  position: absolute;
+  bottom: 20vh;
+  left: 0vw;
+  top: 0vh;
+  width: 100vw;
+  height: 100px;
+  background-repeat: repeat-x;
+  background-size: 1000px 100px;
+  opacity: 0.6;
+}
+
+.waves__3 {
+  position: absolute;
+  bottom: 20vh;
+  left: 0vw;
+  top: 0vh;
+  width: 100vw;
+  height: 100px;
+  background-repeat: repeat-x;
+  background-size: 1000px 100px;
+  opacity: 1;
+}
+
+.waves__4 {
+  position: absolute;
+  top: 0vh;
+  left: -10vw;
+  width: 100vw;
+  height: 100px;
+  background-repeat: repeat-x;
+  background-size: 1000px 100px;
+  opacity: 0.5;
+}
+
+/* Style for scene 6 */
+.scene6 {
+  height: 100vh;
+  h3 {
+    position: sticky;
+    top: 50vh;
+    margin: 7vw 0;
+    z-index: 3;
+  }
+}
+
+/* Styling scene 7 and 8 */
+.scene7 {
+  height: 100vh;
+  background-image: url("../images/healthy-earth.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+
+  div {
+    height: 100vh;
+  }
+}
+
+.scene8 {
+  height: 100vh;
+  background-image: url("../images/dead-earth.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Style for scene 9 */
+.scene9 {
+  height: 120vh;
+
+  .scene9__img-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    margin: 3vw 0;
+    position: sticky;
+    top: 5vw;
+    left: 40vw;
+
+    img {
+      opacity: 0;
+      width: 10vw;
+      margin: 0 auto;
+    }
+  }
+
+  .scene9__trash-bin {
+    position: relative;
+    width: 20vw;
+    min-width: 200px;
+    z-index: 2;
+    left: 40vw;
+  }
+
+  h3 {
+    margin: 0;
+    padding-top: 5vw;
+  }
+}
+.scene10 {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
+  max-width: 100%;
+}
+
+
+/*SVG*/
+
+.head {
+  transform: translateY(170px) translateX(-50px);
+}
+
+.hair {
+  transform: scale(0.2) translateY(1100px) translateX(300px) rotate(-15deg);
+}
+
+.left-eye__pupil {
+  transform: translateX(0.4vw) translateY(-0.4vh);
+}
+
+.left-eye {
+  transform: translateY(120px) translateX(-20px);
+}
+.right-eye__pupil {
+  transform: translateX(5px) translateY(-4px);
+}
+
+.right-eye {
+  transform: translateY(120px) translateX(18px);
+}
+.mouth {
+  transform: translateY(350px) translateX(120px) scale(0.15);
+}
+@media (orientation: landscape) {
+  .speech-bubble {
+    transform: translateX(120px) translateY(45px) rotate(9deg) scale(1.1); 
+  }
+  .head-speech {
+    transform: translateY(-20vh) translateX(-17vw);
+  }
+  .tshirt {
+    transform: scale(0.4) translateY(-1080px) translateX(-80vw);
+  }
+
+
+.pop-up{
+  display: none;
+}
+}
+
+@media (orientation: portrait) {
+  .speech-bubble {
+    transform: translateX(120px) translateY(45px) rotate(9deg) scale(1.1); 
+  }
+  .head-speech {
+    transform: translateY(4vh) translateX(-13vw);
+  }
+  .tshirt {
+    transform: scale(0.4) translateY(-1200px) translateX(-105vw);
+  }
+
+  main{
+    display: none;
+  }
+  .pop-up{
+      display: grid;
+      place-items: center;
+      font-size: 50px;
+      margin-top: 25vh;
+        img{
+          width: 50vw;
+          filter: invert(100);
+          margin: 0 auto;
+        }
+  }
+}
+
+/* Style fishes */
+.plant-container__scene2Fish1{
+  width: 10vw;
+  z-index: 0;
+  opacity: 20%;
+}
+
+.scene2__scene2Fish2{
+  width: 10vw;
+  z-index: 0;
+  opacity: 30%;
+}
+
+.plant-container__fish1{
+  width: 7vw;
+  z-index: 0;
+  opacity: 90%;
+}
+
+.plant-container-fish1{
+  width: 7vw;
+  z-index: 0;
+  opacity: 10%;
+}
+
+.scene3__scene3Fish2{
+  width: 7vw;
+  z-index: 0;
+  opacity: 45%;
+}
+
+.scene4__scene4Fish1{
+  width: 15vw;
+  z-index: 0;
+  opacity: 65%;
+}
+
+.scene5__scene5Fish1{
+  width: 15vw;
+  z-index: 0;
+  opacity: 65%;
+}

@@ -1,0 +1,873 @@
+/* Variables */
+/*Applying colors*/
+/*dark mode */
+@media (prefers-color-scheme: dark) {
+  .scene1 {
+    background: linear-gradient(180deg, rgb(4, 36, 48) 67%, rgb(9, 129, 155) 67%);
+  }
+  .sun {
+    background: url(../images/moon.png);
+  }
+  .scene2 {
+    background: linear-gradient(180deg, rgb(9, 129, 155) 22%, rgb(63, 106, 124) 66%);
+  }
+}
+/*light mode */
+@media (prefers-color-scheme: light) {
+  .scene1 {
+    background: linear-gradient(180deg, rgb(157, 221, 247) 67%, rgb(83, 154, 184) 67%);
+  }
+  .sun {
+    background: url(../images/sun.png);
+  }
+  .scene2 {
+    background: linear-gradient(180deg, rgb(83, 154, 184) 22%, rgb(63, 106, 124) 66%);
+  }
+}
+body {
+  background-color: black;
+  color: white;
+}
+
+h4 {
+  border-bottom: solid white 5px;
+}
+
+a {
+  color: white;
+}
+
+/*Wave url*/
+.waves-1 {
+  background: url(../images/wave.png);
+}
+
+.waves-2 {
+  background: url(../images/wave.png);
+}
+
+.waves-3 {
+  background: url(../images/wave.png);
+}
+
+.waves-4 {
+  background: url(../images/wave.png);
+}
+
+.scene3 {
+  background: linear-gradient(180deg, rgb(63, 106, 124) 22%, rgb(15, 48, 62) 73%);
+}
+
+.scene4 {
+  background: linear-gradient(180deg, rgb(15, 48, 62) 22%, rgb(0, 0, 0) 73%);
+}
+
+.scene5 {
+  background: black;
+}
+
+.scene6 {
+  background: black;
+}
+
+.scene7 {
+  background-color: black;
+}
+
+.scene8 {
+  background-color: black;
+}
+
+.scene9 {
+  background-color: lightblue;
+}
+
+.scene10 {
+  background-color: lightblue;
+}
+
+.man__head {
+  background-color: black;
+}
+
+.man__body {
+  background-color: black;
+}
+
+.man__leg > * {
+  background-color: black;
+}
+
+main {
+  background-color: black;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Gives the first 5 scenes a grid layout */
+main > div:nth-of-type(-n + 5) {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  position: relative;
+}
+
+/* styles the size of the textboxes */
+.scene-text-conteiner {
+  width: 30vw;
+  margin: 0 auto;
+  opacity: 0;
+  position: sticky;
+  top: 25px;
+}
+
+/* general layout for side plant images*/
+.background-plants-right {
+  width: 9vw;
+  float: right;
+  opacity: 0;
+}
+
+.plantContainer {
+  overflow: hidden;
+}
+
+.background-plants-left {
+  width: 9vw;
+  opacity: 0;
+}
+
+/* Style for scene 1 and the elenent in it */
+.bottle {
+  position: absolute;
+  width: 5vw;
+  left: 32vw;
+  transform: translateY(4vw);
+  z-index: 2;
+}
+
+.cloud {
+  width: 50%;
+}
+
+.dock {
+  position: relative;
+  width: 50vw;
+  z-index: 2;
+}
+
+.sun {
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 30%;
+}
+
+.man {
+  width: 10%;
+  position: absolute;
+  margin-top: -3%;
+  left: -50%;
+  z-index: 3;
+}
+
+.waves {
+  position: absolute;
+  width: 100vw;
+  top: 58%;
+  transform: translateY(-50%);
+  z-index: 0;
+}
+
+.waves-1 {
+  position: absolute;
+  top: 0vh;
+  left: 0vw;
+  width: 100vw;
+  height: 100px;
+  background-repeat: repeat-x;
+  background-size: 1000px 100px;
+  opacity: 0.7;
+}
+
+.waves-2 {
+  position: absolute;
+  bottom: 20vh;
+  left: 0vw;
+  top: 0vh;
+  width: 100vw;
+  height: 100px;
+  background-repeat: repeat-x;
+  background-size: 1000px 100px;
+  opacity: 0.6;
+}
+
+.waves-3 {
+  position: absolute;
+  bottom: 20vh;
+  left: 0vw;
+  top: 0vh;
+  width: 100vw;
+  height: 100px;
+  background-repeat: repeat-x;
+  background-size: 1000px 100px;
+  opacity: 1;
+}
+
+.waves-4 {
+  position: absolute;
+  top: 0vh;
+  left: -55vw;
+  width: 100vw;
+  height: 100px;
+  background-repeat: repeat-x;
+  background-size: 1000px 100px;
+  opacity: 0.5;
+}
+
+/* Style for scene 6 */
+.scene6 {
+  height: 100vh;
+}
+.scene6 h3 {
+  position: sticky;
+  top: 50vh;
+  margin: 7vw 0;
+  z-index: 3;
+}
+
+/* Styling scene 7 and 8 */
+.scene7 {
+  height: 100vh;
+  background-image: url("../images/healthy-earth.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.scene7 div {
+  height: 100vh;
+}
+
+.scene8 {
+  height: 100vh;
+  background-image: url("../images/dead-earth.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+/* Style for scene 9 */
+.scene9 {
+  height: 120vh;
+}
+.scene9 .img-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  margin: 3vw 0;
+  position: sticky;
+  top: 5vw;
+  left: 40vw;
+}
+.scene9 .img-container img {
+  opacity: 0;
+  width: 10vw;
+  margin: 0 auto;
+}
+.scene9 .trash-bin {
+  position: relative;
+  width: 20vw;
+  min-width: 200px;
+  z-index: 2;
+  left: 40vw;
+}
+.scene9 h3 {
+  margin: 0;
+  padding-top: 5vw;
+}
+
+.scene10 {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  text-align: center;
+}
+.scene10 .linkContainer {
+  padding: 100px 20px 0;
+  margin: 0 auto;
+}
+.scene10 h4 {
+  margin: 0;
+  text-align: center;
+  overflow: hidden;
+  line-height: 1;
+}
+.scene10 h4:hover {
+  transition: 0.2s;
+  cursor: pointer;
+  transform: skewX(-5deg);
+}
+
+/* Style fishes */
+.scene2Fish1 {
+  width: 10vw;
+  z-index: 0;
+  opacity: 20%;
+}
+
+.scene2Fish2 {
+  width: 10vw;
+  z-index: 0;
+  opacity: 30%;
+}
+
+.scene3Fish1 {
+  width: 7vw;
+  z-index: 0;
+  opacity: 90%;
+}
+
+.scene3Fish2 {
+  width: 7vw;
+  z-index: 0;
+  opacity: 10%;
+}
+
+.scene3Fish2 {
+  width: 7vw;
+  z-index: 0;
+  opacity: 45%;
+}
+
+.scene4Fish1 {
+  width: 15vw;
+  z-index: 0;
+  opacity: 65%;
+}
+
+.scene5Fish1 {
+  width: 15vw;
+  z-index: 0;
+  opacity: 65%;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+.scene-text-conteiner,
+p {
+  font-size: 2.7ch;
+}
+
+h3 {
+  font-size: 5rem;
+  text-align: center;
+}
+
+h4 {
+  font-size: 8vw;
+}
+
+@keyframes textboxInn {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 1;
+  }
+}
+@keyframes plantLeftInn {
+  0% {
+    opacity: 1;
+    transform: rotate(13deg) translateX(-90px);
+  }
+  40% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+  60% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+}
+@keyframes plantRightInn {
+  0% {
+    opacity: 1;
+    transform: rotate(-13deg) translateX(90px);
+  }
+  40% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+  60% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+}
+@keyframes bottleThrow {
+  0% {
+    transform: translateY(4vw);
+  }
+  60% {
+    transform: translateX(20vw) translateY(-20vw) rotate(-200deg);
+  }
+  100% {
+    transform: translateX(17vw) translateY(10vw) rotate(-400deg);
+    position: fixed;
+  }
+}
+@keyframes trashbinFixedAnimation {
+  100% {
+    position: sticky;
+    top: 23vw;
+    left: 40vw;
+  }
+}
+.trashBinFixed {
+  animation-name: trashbinFixedAnimation;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample1 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample2 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample3 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample4 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample5 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.showTextAnimation {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.showPlantLeftAnimation {
+  animation-name: plantLeftInn;
+  transition: 0.8s;
+  animation-duration: 3s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.showPlantRightAnimation {
+  animation-name: plantRightInn;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.throwBottleAnimation {
+  animation-name: bottleThrow;
+  transition: 2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+
+.sun {
+  animation-name: sunMove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes sunMove {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+/* Man animations */
+.man {
+  animation: walking 0.6s infinite, man-walking 5s forwards;
+}
+
+@keyframes walking {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes man-walking {
+  0% {
+    left: -50%;
+  }
+  50% {
+    left: 25%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+/*Waves animation*/
+.waves-1 {
+  animation: animate__wave-1 10s linear;
+  animation-iteration-count: 1000;
+}
+
+@keyframes animate__wave-1 {
+  0% {
+    background-position-x: 0vw;
+  }
+  100% {
+    background-position-x: -80vw;
+  }
+}
+.waves-2 {
+  animation: animate__wave-2 20s linear infinite;
+  animation-delay: 0s;
+}
+
+@keyframes animate__wave-2 {
+  0% {
+    background-position-x: 0vw;
+  }
+  100% {
+    background-position-x: 80vw;
+  }
+}
+.waves-3 {
+  animation: animate__wave-3 10s linear infinite;
+  animation-delay: 5s;
+}
+
+@keyframes animate__wave-3 {
+  0% {
+    background-position-x: 10vw;
+  }
+  100% {
+    background-position-x: -100vw;
+  }
+}
+.waves-4 {
+  animation: animate__wave-4 30s linear;
+  z-index: 1000;
+  animation-iteration-count: 1000;
+}
+
+@keyframes animate__wave-4 {
+  0% {
+    background-position-x: 0vw;
+  }
+  100% {
+    background-position-x: 80vw;
+  }
+}
+/* MEDIA CODE */
+/* reduce motion*/
+@media (prefers-reduced-motion) {
+  /*Sun animation*/
+  .sun {
+    animation-name: sunMove 2s infinite alternate;
+  }
+  @keyframes sunMove {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
+  /*Waves animation*/
+  .waves-1 {
+    animation: animate__wave-1 50s linear;
+    animation-iteration-count: 1000;
+  }
+  @keyframes animate__wave-1 {
+    0% {
+      background-position-x: 0vw;
+    }
+    100% {
+      background-position-x: -80vw;
+    }
+  }
+  .waves-2 {
+    animation: animate__wave-2 30s linear infinite;
+    animation-delay: 0s;
+  }
+  @keyframes animate__wave-2 {
+    0% {
+      background-position-x: 0vw;
+    }
+    100% {
+      background-position-x: 80vw;
+    }
+  }
+  .waves-3 {
+    animation: animate__wave-3 20s linear infinite;
+    animation-delay: 5s;
+  }
+  @keyframes animate__wave-3 {
+    0% {
+      background-position-x: 10vw;
+    }
+    100% {
+      background-position-x: -100vw;
+    }
+  }
+  .waves-4 {
+    animation: animate__wave-4 40s linear infinite;
+  }
+  @keyframes animate__wave-4 {
+    0% {
+      background-position-x: 0vw;
+    }
+    100% {
+      background-position-x: 80vw;
+    }
+  }
+  @keyframes bottleThrow {
+    0% {
+      transform: translateY(4vw);
+    }
+    60% {
+      transform: translateX(20vw) translateY(-5vw);
+    }
+    100% {
+      transform: translateX(20vw) translateY(10vw);
+      position: fixed;
+    }
+  }
+}
+/* Fish animations */
+@keyframes fishSwimAnimation1 {
+  0% {
+    transform: translateY(0);
+    left: 0;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 90vw;
+  }
+  50% {
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px) scalex(-1);
+    left: 0;
+  }
+}
+@keyframes fishSwimAnimation2 {
+  0% {
+    transform: translateY(0);
+    left: 0;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 90vw;
+  }
+  50% {
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px) scalex(-1);
+    left: 0;
+  }
+}
+@keyframes fishSwimAnimation3 {
+  0% {
+    transform: translateY(0);
+    left: 0;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 40vw;
+  }
+  50% {
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px) scalex(-1);
+    left: 0;
+  }
+}
+@keyframes fishSwimAnimation4 {
+  0% {
+    transform: translateY(0);
+    left: 0;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 3vw;
+  }
+  50% {
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px) scalex(-1);
+    left: 0;
+  }
+}
+@keyframes fishSwimAnimation5 {
+  0% {
+    transform: translateY(0);
+    left: 80vw;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 70vw;
+  }
+  50% {
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px) scalex(-1);
+    left: 80vw;
+  }
+}
+.scene2Fish1 {
+  position: absolute;
+  animation-name: fishSwimAnimation1;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+
+.scene2Fish2 {
+  position: absolute;
+  animation-name: fishSwimAnimation3;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+
+.scene3Fish1 {
+  position: absolute;
+  animation-name: fishSwimAnimation2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.scene3Fish2 {
+  position: absolute;
+  animation-name: fishSwimAnimation3;
+  animation-delay: 2s;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+.scene4Fish1 {
+  position: absolute;
+  animation-name: fishSwimAnimation4;
+  animation-delay: 2s;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.scene5Fish1 {
+  position: absolute;
+  animation-name: fishSwimAnimation5;
+  animation-delay: 2s;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+/* read more reveal */
+.revealanimation {
+  display: block;
+  animation-name: reveal;
+  animation-duration: 1.5s;
+  transition: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0, 100%);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}/*# sourceMappingURL=index.css.map */

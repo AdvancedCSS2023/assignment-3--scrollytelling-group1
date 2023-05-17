@@ -1,0 +1,547 @@
+@keyframes textboxInn {
+  0% {
+    transform: translateY(0);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-40px);
+    opacity: 1;
+  }
+}
+
+@keyframes plantLeftInn {
+  0% {
+    opacity: 1;
+    transform: rotate(13deg) translateX(-90px);
+  }
+  40% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+  60% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(38deg) translateX(0px);
+  }
+}
+
+@keyframes plantRightInn {
+  0% {
+    opacity: 1;
+    transform: rotate(-13deg) translateX(90px);
+  }
+  40% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+  60% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+  80% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(-30deg) translateX(0px);
+  }
+}
+
+@keyframes bottleThrow {
+  0% {
+    transform: translateY(4vw);
+  }
+  60% {
+    transform: translateX(20vw) translateY(-20vw) rotate(-200deg);
+  }
+
+  100% {
+    transform: translateX(17vw) translateY(10vw) rotate(-400deg);
+    position: fixed;
+  }
+}
+
+@keyframes trashbinFixedAnimation {
+  0% {
+  }
+  100% {
+    position: sticky;
+    top: 23vw;
+    left: 40vw;
+  }
+}
+
+.trashBinFixed {
+  animation-name: trashbinFixedAnimation;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample1 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample2 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.6s;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample3 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample4 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 1.2s;
+  animation-fill-mode: forwards;
+}
+
+.showTrashExample5 {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.showTextAnimation {
+  animation-name: textboxInn;
+  transition: 0.8s;
+  animation-duration: 1s;
+  animation-delay: 0.7s;
+  animation-fill-mode: forwards;
+}
+
+.showPlantLeftAnimation {
+  animation-name: plantLeftInn;
+  transition: 0.8s;
+  animation-duration: 3s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.showPlantRightAnimation {
+  animation-name: plantRightInn;
+  animation-duration: 1s;
+  animation-delay: 0.9s;
+  animation-fill-mode: forwards;
+}
+
+.throwBottleAnimation {
+  animation-name: bottleThrow;
+  transition: 2s;
+  animation-duration: 3s;
+  animation-delay: 2s;
+  animation-fill-mode: forwards;
+}
+.sun {
+  animation-name: sunMove;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes sunMove {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(0.8);
+  }
+}
+
+/* Man animations */
+.scene1__content-man {
+  animation: walking 0.6s infinite, man-walking 5s forwards;
+}
+@keyframes walking {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes man-walking {
+  0% {
+    left: -50%;
+  }
+  50% {
+    left: 25%;
+  }
+  100% {
+    left: -50%;
+  }
+}
+/*clouds*/
+.clouds__1, .clouds__2{
+     animation: cloudMove 10s linear infinite;
+}
+@keyframes cloudMove {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+/*Waves animation*/
+.waves__1 {
+  animation: animate__wave-1 10s linear;
+  animation-iteration-count: 1000;
+}
+@keyframes animate__wave-1 {
+  0% {
+    background-position-x: 0vw;
+  }
+  100% {
+    background-position-x: -80vw;
+  }
+}
+
+.waves__2 {
+  animation: animate__wave-2 20s linear infinite;
+  animation-delay: 0s;
+}
+@keyframes animate__wave-2 {
+  0% {
+    background-position-x: 0vw;
+  }
+  100% {
+    background-position-x: 80vw;
+  }
+}
+
+.waves__3 {
+  animation: animate__wave-3 10s linear infinite;
+  animation-delay: 5s;
+}
+@keyframes animate__wave-3 {
+  0% {
+    background-position-x: 10vw;
+  }
+  100% {
+    background-position-x: -100vw;
+  }
+}
+
+.waves__4 {
+  animation: animate__wave-4 30s linear;
+  z-index: 1000;
+  animation-iteration-count: 1000;
+}
+@keyframes animate__wave-4 {
+  0% {
+    background-position-x: 0vw;
+  }
+  100% {
+    background-position-x: 80vw;
+  }
+}
+
+/* MEDIA CODE */
+/* reduce motion*/
+@media (prefers-reduced-motion) {
+  /*Sun animation*/
+  .sun {
+    animation-name: sunMove 2s infinite alternate;
+  }
+  @keyframes sunMove {
+    0% {
+      transform: scale(0.8);
+    }
+    100% {
+      transform: scale(0.8);
+    }
+  }
+  /*Waves animation*/
+  .waves__1 {
+    animation: animate__wave-1 50s linear;
+    animation-iteration-count: 1000;
+  }
+  @keyframes animate__wave-1 {
+    0% {
+      background-position-x: 0vw;
+    }
+    100% {
+      background-position-x: -80vw;
+    }
+  }
+
+  .waves__2 {
+    animation: animate__wave-2 30s linear infinite;
+    animation-delay: 0s;
+  }
+  @keyframes animate__wave-2 {
+    0% {
+      background-position-x: 0vw;
+    }
+    100% {
+      background-position-x: 80vw;
+    }
+  }
+
+  .waves__3 {
+    animation: animate__wave-3 20s linear infinite;
+    animation-delay: 5s;
+  }
+  @keyframes animate__wave-3 {
+    0% {
+      background-position-x: 10vw;
+    }
+    100% {
+      background-position-x: -100vw;
+    }
+  }
+
+  .waves__4 {
+    animation: animate__wave-4 40s linear infinite;
+  }
+  @keyframes animate__wave-4 {
+    0% {
+      background-position-x: 0vw;
+    }
+    100% {
+      background-position-x: 80vw;
+    }
+  }
+
+  @keyframes bottleThrow {
+    0% {
+      transform: translateY(4vw);
+    }
+    60% {
+      transform: translateX(20vw) translateY(-5vw);
+    }
+
+    100% {
+      transform: translateX(20vw) translateY(10vw);
+      position: fixed;
+    }
+  }
+}
+
+/* Fish animations */
+
+@keyframes fishSwimAnimation1 {
+  0% {
+    transform: translateY(0);
+    left: 0;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 90vw;
+  }
+  50%{
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px)scalex(-1);
+    left: 0;
+  }
+}
+
+@keyframes fishSwimAnimation2 {
+  0% {
+    transform: translateY(0);
+    left: 0;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 90vw;
+  }
+  50%{
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px)scalex(-1);
+    left: 0;
+  }
+}
+
+@keyframes fishSwimAnimation3 {
+  0% {
+    transform: translateY(0);
+    left: 0;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 40vw;
+  }
+  50%{
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px)scalex(-1);
+    left: 0;
+  }
+}
+
+@keyframes fishSwimAnimation4 {
+  0% {
+    transform: translateY(0);
+    left: 0;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 3vw;
+  }
+  50%{
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px)scalex(-1);
+    left: 0;
+  }
+}
+
+@keyframes fishSwimAnimation5 {
+  0% {
+    transform: translateY(0);
+    left: 80vw;
+  }
+  25% {
+    transform: translateY(30px);
+  }
+  49% {
+    transform: translateY(0px);
+    left: 70vw;
+  }
+  50%{
+    transform: scalex(-1);
+  }
+  75% {
+    transform: translateY(50px) scalex(-1);
+  }
+  100% {
+    transform: translateY(0px)scalex(-1);
+    left: 80vw;
+  }
+}
+
+.plant-container__scene2Fish1 {
+  position: absolute;
+  animation-name: fishSwimAnimation1;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+
+.scene2__scene2Fish2 {
+  position: absolute;
+  animation-name: fishSwimAnimation3;
+  animation-duration: 35s;
+  animation-iteration-count: infinite;
+}
+
+.plant-container-fish1 {
+  position: absolute;
+  animation-name: fishSwimAnimation2;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+}
+
+.scene3__scene3Fish2 {
+  position: absolute;
+  animation-name: fishSwimAnimation3;
+  animation-delay: 2s;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
+}
+
+.scene4__scene4Fish1 {
+  position: absolute;
+  animation-name: fishSwimAnimation4;
+  animation-delay: 2s;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+.scene5Fish1 {
+  position: absolute;
+  animation-name: fishSwimAnimation5;
+  animation-delay: 2s;
+  animation-duration: 15s;
+  animation-iteration-count: infinite;
+}
+
+/* read more reveal */
+.revealanimation {
+  display: block;
+  animation-name: reveal;
+  animation-duration: 1.5s;
+  transition: cubic-bezier(0.77, 0, 0.175, 1);
+}
+
+@keyframes reveal {
+  0% {
+    transform: translate(0,100%);
+  }
+  100% {
+    transform: translate(0,0);
+  }
+}
+
+
+/*SVG animations*/
+
+.head {
+  animation: head-animation linear 5s infinite;
+}
+@keyframes head-animation {
+  50% {
+    transform: translateY(175px) translateX(-50px);
+  }
+  100% {
+    transform: translateY(170px) translateX(-50px);
+
+  }
+}
+

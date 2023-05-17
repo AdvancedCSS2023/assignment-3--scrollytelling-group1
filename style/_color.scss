@@ -1,0 +1,120 @@
+/* Variables */
+$scene1GradientDarkMode: linear-gradient(
+  180deg,
+  rgb(4, 36, 48) 67%,
+  rgb(9, 129, 155) 67%
+);
+$scene1GradientLightMode: linear-gradient(
+  180deg,
+  rgba(157, 221, 247, 1) 67%,
+  rgb(83, 154, 184) 67%
+);
+$scene2GradientDarkMode: linear-gradient(
+  180deg,
+  rgba(9, 129, 155) 22%,
+  rgba(63, 106, 124, 1) 66%
+);
+$scene2Gradient: linear-gradient(
+  180deg,
+  rgba(83, 154, 184, 1) 22%,
+  rgba(63, 106, 124, 1) 66%
+);
+$scene3Gradient: linear-gradient(
+  180deg,
+  rgba(63, 106, 124, 1) 22%,
+  rgba(15, 48, 62, 1) 73%
+);
+$scene4Gradient: linear-gradient(
+  180deg,
+  rgba(15, 48, 62, 1) 22%,
+  rgba(0, 0, 0, 1) 73%
+);
+$scene5Gradient: black;
+$darkSceneFontColor: white;
+$trashcanBackground: lightblue;
+$urlWave: url(../images/wave.png);
+
+/*Applying colors*/
+/*dark mode */
+@media (prefers-color-scheme: dark) {
+  .scene1 {
+    background: $scene1GradientDarkMode;
+  }
+  .sun {
+    background: url(../images/moon.png);
+  }
+  .scene2 {
+    background: $scene2GradientDarkMode;
+  }
+}
+
+/*light mode */
+@media (prefers-color-scheme: light) {
+  .scene1 {
+    background: $scene1GradientLightMode;
+  }
+  .sun {
+    background: url(../images/sun.png);
+  }
+
+  .scene2 {
+    background: $scene2Gradient;
+  }
+}
+
+body {
+  background-color: $scene5Gradient;
+  color: $darkSceneFontColor;
+}
+
+a{
+  color: $darkSceneFontColor;
+}
+
+/*Wave url*/
+.waves__1 {
+  background: $urlWave;
+}
+.waves__2 {
+  background: $urlWave;
+}
+.waves__3 {
+  background: $urlWave;
+}
+.waves__4 {
+  background: $urlWave;
+}
+.scene3 {
+  background: $scene3Gradient;
+}
+.scene4 {
+  background: $scene4Gradient;
+}
+.scene5 {
+  background: $scene5Gradient;
+}
+.scene6 {
+  background: $scene5Gradient;
+}
+.scene7 {
+  background-color: $scene5Gradient;
+}
+
+.scene8 {
+  background-color: $scene5Gradient;
+}
+
+.scene9{
+    background-color: $trashcanBackground;
+}
+
+.scene10{
+    background-color: $trashcanBackground;
+}
+.clouds__1>*, .clouds__2>*{
+    background-color: white;
+}
+
+main {
+  background-color: $scene5Gradient;
+}
